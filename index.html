@@ -13,7 +13,27 @@
 </head>
 <body>
 	<header id="header">
+		<!--images on either side of title-->
+		<h1> The 17 sustainable development goals: Poverty </h1>
+		<!--add image here--> 
+		<form>
+			<label> Sign up with email for newsletter </label>
+			<input class="email" type="text" required> <br>
+			<button onlick="sign up" value="sign up"/> <br>
+		</form>
 
+		<div class="signedUp">
+			<p class="message"></p>
+		</div>
+
+		<script>
+
+			function signUp(){
+				var email= document.getElementById("email").value;
+				var message="you have now signed up for our news letter " + email
+				document.getElementById("message").innerHTML=sMessage;
+			}
+		</script>
 	</header>
 
 	<navbar id="navbar">

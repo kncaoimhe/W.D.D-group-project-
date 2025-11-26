@@ -1,40 +1,73 @@
-.img1 {
-	width: 230px; 
-	float: left;
-	}
+.body{
+	background-color:#F67561;
+}
+
+.header{
+	background-color:#D8280D;
+}
 h1{
 	text-decoration: underline;
 	text-align: center;
+	color: white;	
 }
 h3{
 	text-decoration: underline; 
-	background-color: #FF0505; 
-	
+	background-color: #F2452B; 
+	color: white;
 }
 h5{
-	text-decoration: underline; 
-	background-color: #FF0505;
+	color: white;
+}
+p{
+	color: white;
+}
+.text{
+	color: white;
+}
+
+.navbar a{
+	color: #D8280D;
+}
+.navbar{
+	background-color: white;
+	
+}
+.main{
+
+}
+
+.summary {
+	float: right; 
+	border: 2px solid #D8280D; 
+	width: 300px; 
+	height: 600px; 
+	background-color: white;
 }
 .goal {
 	float: right;
 }
-.summary {
-	float: right; border: 2px solid black; 
-	width: 300px; height: 600px; 
-	background-color: white;
-}
-.navbar {
-	
-}
-.main{
-	
-}
-.header{
-	background-color:#FF0505;
-}
 .footer{
 	
 }
+.list{
+	color: white;
+}
+.references{
+	text-decoration: underline; 
+	background-color: #F2452B;
+	color: white;
+}
+
+
+.img1{
+	width: 230px; 
+	float: left;
+}
 .img2 {
-	float: right; width: 240px
+	float: right; 
+	width: 240px
+}
+.irelandFlag{
+	float: left; 
+	width: 95px;
 }

@@ -1,3 +1,5 @@
+/*General style*/
+
 .body{
 	background-color:#F67561;
 }
@@ -33,15 +35,7 @@ p{
 	
 }
 .main{
-
-}
-
-.summary {
-	float: right; 
-	border: 2px solid #D8280D; 
-	width: 300px; 
-	height: 600px; 
-	background-color: white;
+	
 }
 .goal {
 	float: right;
@@ -49,16 +43,15 @@ p{
 .footer{
 	
 }
-.list{
-	color: white;
-}
-.references{
-	text-decoration: underline; 
-	background-color: #F2452B;
-	color: white;
-}
 
-
+/*Seperate part for Index and Info page - Caoimhe*/
+.summary {
+	float: right; 
+	border: 2px solid #D8280D; 
+	width: 300px; 
+	height: 600px; 
+	background-color: white;
+}
 .img1{
 	width: 230px; 
 	float: left;
@@ -67,7 +60,50 @@ p{
 	float: right; 
 	width: 240px
 }
+
+/*Seperate part for Ireland page - Suzanne*/
+
 .irelandFlag{
 	float: left; 
 	width: 95px;
 }
+.ireland20thCenture{
+	float: right;
+	
+}
+.ireland21stCenture{
+	width: 100px;
+	float: left;
+	padding-right: 10px;
+}
+.ireland2stCenture2{
+	float: right;
+	width: 30%;
+	padding-bottom: 50px;
+}
+
+
+
+.bodyIreland{
+	background-color:#F67561;
+}
+.headerIreland{
+	background-color:#D8280D;
+}
+.mainIreland{}
+.summaryIreland{
+	float: right; 
+	border: 2px solid #D8280D; 
+	width: 300px; 
+	height: 600px; 
+	background-color: white;
+}
+.referencesIreland{
+	text-decoration: underline; 
+	background-color: #F2452B;
+	color: white;
+}
+.listIreland{
+	color: white;
+}
+.footerIreland{}

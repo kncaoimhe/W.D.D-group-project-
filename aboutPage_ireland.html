@@ -18,7 +18,7 @@
 				<img class="irelandFlag" src="irelandFlag_S.png" alt="Ireland Flag"/>
 				<h1 class="text">Ireland and the UN 2030 Agenda against Poverty</h1><!--Title of the page-->
 			</header>
-			<main class="mainIreland"><!--content-->
+			<main class="mainIreland2"><!--content-->
 				<nav class="navbar"><!--Navbar, where all the pages are going to be connected, so the client to have access-->
 					<a href="index.html"> Home page </a> <br>
 					<a href="info.html"> Information page </a> <br>
@@ -30,61 +30,74 @@
 					<a href= "aboutPage_switxerland.html"> Switcherland and poverty </a> <br><!--These page-->
 				</nav>
 				
-				<h5 class="text">How Ireland Measure Poverty</h5>
-				<p>There are different ways to understand poverty. In Ireland, “absolute poverty” refers to situations in which a person lacks basic necessities such as food and shelter. And to be “at risk of poverty” reflects the concept of “relative poverty”, which applies when a household’s income is below 60% of the national median (2023 it was 10.6%). Ireland is aligned with the United Nations’ 17 Sustainable Development Goals (SDGs) and working to analyse data to create new social and economic strategies.
-				</p>
-				
+				<div class="summaryIreland">
+					<h5 class="textSummary1">Summary:</h5>
+					<ul class="textSummary2">
+						<li>gerdgd</li>
+						<li>fgdfgfdg</li>
+						<li>gdgd</li>
+						<li>dgfdgfd</li>
+					</ul>
+					<div id="mainScreen">
+					<h5 class="textSummary1">Sign up for newsletter:</h5>
+						<label class="textSummary2">Your user name:</label><br>
+							<input onkeyup="validateData();" id="userName" type="text" /><br>
+						<label class="textSummary2">Your email address:</label><br>
+							<input onkeyup="validateData();" id="email" type="email" /><br>
+						<label class="textSummary2">Your password:</label><br>
+							<input onkeyup="validateData();" id="password" type="password" /><br>
+						<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
+					</div>
+		
+					<div id="success">
+						<p id="message"></p>
+						<button onclick="logout();">Log out</button>
+					</div>
+		<script>
+			document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("myBtn");
+			var sUserName, sEmail, sPassword;
 			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				//NOT = 0, false, "", undefined, null -> TRUE
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
 			
-			<div class="summaryIreland" id="mainScreen">
+			function authenticateUser(){
+				document.getElementById("mainScreen").style.display = "none";
+				document.getElementById("success").style.display = "block";
 				
-				<div class="loginBox">
-					<label>Your user name</label><br>
-					<input onkeyup="validateData();" id="userName" type="text" /><br>
-					<label>Your email address</label><br>
-					<input onkeyup="validateData();" id="email" type="email" /><br>
-					<label>Your password</label><br>
-					<input onkeyup="validateData();" id="password" type="password" /><br>
-					<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
-				</div>
-				
-				<div id="success">
-					<p id="message"></p>
-					<button onclick="logout();">Log out</button>
-				</div>
-				
-			</div>
-			<script>
-					document.getElementById("success").style.display = "none";
-					var myTargetElementBtn = document.getElementById("myBtn");
-					var sUserName, sEmail, sPassword;
-			
-					function validateData(){
-						sUserName = document.getElementById("userName").value;
-						sEmail = document.getElementById("email").value;
-						sPassword = document.getElementById("password").value;
-				
-					//NOT = 0, false, "", undefined, null -> TRUE
-						if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
-							myTargetElementBtn.disabled = false;
-						}else{
-							myTargetElementBtn.disabled = true;
-						}
-					}
-			
-					function authenticateUser(){
-						document.getElementById("mainScreen").style.display = "none";
-						document.getElementById("success").style.display = "block";
-				
-					var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + " and password " + sPassword + "!";
-						document.getElementById("message").innerHTML = sMessage;			
-					}
+				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + " and password " + sPassword + "!";
+				document.getElementById("message").innerHTML = sMessage;			
+			}
 						
-					function logout(){
-						window.location.reload();
-					}
+			function logout(){
+				window.location.reload();
+			}
 			
-			</script>
+
+		</script>
+				</div>
+				
+				<h5 class="text">How Ireland Measure Poverty</h5>
+				<p>There are different ways to understand poverty. In Ireland, “absolute poverty” refers to situations in which a person lacks basic necessities such as food and shelter. And to be “at risk of poverty” reflects the concept of “relative poverty”, which applies when a household’s income is below 60% of the national median (2023 it was 10.6%). Ireland is aligned with the United Nations’ 17 Sustainable Development Goals (SDGs) and working to analyse data to create new social and economic strategies.</p>
+				
+				
+				
+				<p>Ireland created the “Roadmap for Social Inclusion 2020-2025” (2020) to reduce consistent poverty to 2.0% and make Ireland one of the most socially inclusive countries in the EU. Unfortunately, even all the efforts, the rate of consistent poverty In Ireland was 5.0% (2024) that was more then the past two years (3.6% 2023 and 4.9% 2022) (CS), 2025).</p><br>
+			
+				<img class="codeIreland" src="ireland4_S.png" alt="QR CODE - More information from the Government"/>
+				
+			
+				
 			</main>
 			
 			<footer class="footerIreland"><!--Bottom of the page-->
@@ -94,3 +107,4 @@
 		</div>
 	</body>
 </html>
+

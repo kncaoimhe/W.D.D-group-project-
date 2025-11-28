@@ -18,7 +18,7 @@
 				<img id="irelandFlag" src="irelandFlag_S.png" alt="Ireland Flag"/>
 				<h1 class="title">Ireland and the UN 2030 Agenda against Poverty</h1><!--Title of the page-->
 			</header>
-			<main class="mainIreland2"><!--content-->
+		<main class="mainIreland2"><!--content-->
 				<nav class="navbar"><!--Navbar, where all the pages are going to be connected, so the client to have access-->
 					<a href="index.html"> Home page </a> <br>
 					<a href="info.html"> Information page </a> <br>
@@ -30,19 +30,19 @@
 					<a href= "aboutPage_switxerland.html"> Switcherland and poverty </a> <br><!--These page-->
 				</nav>
 				
-			<div class="container2">
-				<div class="poverty">
+			<div class="container2"><!--Container of this page to sepaate the columns of the informations I want to add here-->
+				<div class="poverty"><!--First columns is the paragraph and the Image-->
 					<h5 class="subTitle">How Ireland Measure Poverty</h5>
 					<p>There are different ways to understand poverty. In Ireland, “absolute poverty” refers to situations in which a person lacks basic necessities such as food and shelter. And to be “at risk of poverty” reflects the concept of “relative poverty”, which applies when a household’s income is below 60% of the national median (2023 it was 10.6%). Ireland is aligned with the United Nations’ 17 Sustainable Development Goals (SDGs) and working to analyse data to create new social and economic strategies.</p>
 					<p>Ireland created the “Roadmap for Social Inclusion 2020-2025” (2020) to reduce consistent poverty to 2.0% and make Ireland one of the most socially inclusive countries in the EU. Unfortunately, even all the efforts, the rate of consistent poverty In Ireland was 5.0% (2024) that was more then the past two years (3.6% 2023 and 4.9% 2022) (CS), 2025).</p><br>
-				<div class="povertyImages">
-					<img id="poverty2_S" src="poverty2_S.png" alt="2030 Agenda"/>
-				</div>
+					<div class="povertyImages"><!--there is a div just for the image to not be corrupt in the CSS file based on the other div-->
+						<img id="poverty2_S" src="poverty2_S.png" alt="2030 Agenda"/>
+					</div>
 				</div>
 					
 				
-				<div class="summaryIreland">
-					<p>12 key goals for Ireland based on 17 UN SDG goals:</p>
+				<div class="summaryIreland"><!--The ohter div for the second column of the container. Where it is located the summary and the Sign up form-->
+					<p>12 key goals for Ireland based on 17 UN SDG goals:</p><!--Summary of the Goals that Ireland use-->
 					<ul class="textSummary1">
 						<li>No Poverty</li>
 						<li>Zero Hunger</li>
@@ -57,9 +57,9 @@
 						<li>Sustainable Cities and Communities</li>
 						<li>Responsible Consumption and Production </li>
 					</ul>
-				<hr class="line">
-					<div id="mainScreen">
-					<p>Sign up for newsletter:</p>
+				<hr class="line"><!--Line to separate the summary from the Login form-->
+					<div id="mainScreen"><!--Login part - that uses JS-->
+					<p>Sign up for newsletter:</p><!--Boxes and Button to the Login-->
 						<label class="textSummary2">Your user name:</label><br>
 							<input onkeyup="validateData();" id="userName" type="text" /><br>
 						<label class="textSummary2">Your email address:</label><br>
@@ -70,14 +70,14 @@
 					</div>
 		
 					<div id="success">
-						<p id="message"></p>
+						<p id="message"></p><!--When it goes right, it will show a message and a button if the person wants to logout-->
 						<button onclick="logout();">Log out</button>
 					</div>
 				</div>
 				
 				
 			</div>
-			<div class="container3">
+			<div class="container3"><!--Third container just for the References and QR Code for a pdf that has more explanation of the Agenda 2030-->
 				<img id="codeIreland" src="ireland4_S.png" alt="QR CODE - More information from the Government"/>
 				<h5 class="referencesIreland">References</h5>
 						<ul class="listIreland">
@@ -86,21 +86,15 @@
 							<li>Social Justice Ireland</li>
 						</ul>
 			</div>	
-				
-				
-			
-				
-				
-			
-				
-			</main>
+		</main>
 			
 			<footer class="footerIreland"><!--Bottom of the page-->
 				<p>2025 Ireland Poverty Research Porject | Developed by Group A | Page developed by Suzanne Soares</p>
-				
+				<!--Just the date, name of the project, group name and name of the developer of the page-->
 			</footer>
+			
 		</div>
-			<script>
+			<script>//The hole JS code to make the Login box work - It can be far from the "mainScreen", but it has to be inside of the body
 			document.getElementById("success").style.display = "none";
 			var myTargetElementBtn = document.getElementById("myBtn");
 			var sUserName, sEmail, sPassword;
@@ -121,7 +115,7 @@
 			function authenticateUser(){
 				document.getElementById("mainScreen").style.display = "none";
 				document.getElementById("success").style.display = "block";
-				
+				//Message that will appear when Login success 
 				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
 				document.getElementById("message").innerHTML = sMessage;			
 			}

@@ -1,19 +1,22 @@
 /*General style*/
 
 .body{
-	background-color:#F67561;
+	background-color:#F78978;
 }
 
 .header{
 	background-color:#D8280D;
 }
 h1{
-	text-decoration: underline;
 	text-align: center;
 	color: white;	
 }
 h3{
-	text-decoration: underline; 
+	 
+	background-color: #F2452B; 
+	color: white;
+}
+h4{
 	background-color: #F2452B; 
 	color: white;
 }
@@ -23,9 +26,7 @@ h5{
 p{
 	color: white;
 }
-.text{
-	color: white;
-}
+
 
 .navbar a{
 	color: #D8280D;
@@ -62,48 +63,134 @@ p{
 }
 
 /*Seperate part for Ireland page - Suzanne*/
-
-.irelandFlag{
-	float: left; 
-	width: 95px;
-}
-.ireland20thCenture{
-	float: right;
-	
-}
-.ireland21stCenture{
-	width: 100px;
-	float: left;
-	padding-right: 10px;
-}
-.ireland2stCenture2{
-	float: right;
-	width: 30%;
-	padding-bottom: 50px;
-}
-
-
-
+/*First Page*/
 .bodyIreland{
-	background-color:#F67561;
+	background-color:#F78978;
+	padding-bottom: 80px;
+	margin: 0;
 }
+
+.wrapperIreland{}
+
 .headerIreland{
 	background-color:#D8280D;
 }
-.mainIreland{}
+.title{
+	color: white;
+	text-align: center;
+}
+#irelandFlag{
+	float: left; 
+	width: 95px;
+}
+
+.mainIreland1{
+	/*height: 700px;*/
+}
+.subTitle{
+	text-align: center;
+	color: white;
+}
+.container{
+	display: flex;
+	gap: 30px;
+}
+.container > div{
+	flex: 1;
+}
+
+
+.sec20{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+}
+.subTitle20, .subTitle21{
+	color: white;
+}
+#ireland20thCenture{
+	float: none;
+	display: block;
+	width: 65%;
+	padding-bottom: 15px;
+	padding-top: 17px;
+}
+
+.sec21{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+	gap: 20px;
+}
+.sec21 .subSec21{
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+.sec21 .subSec21B{
+	/*float: left;*/
+}
+
+
+#ireland21stCenture{
+	float: none;
+	display: block;
+	width: 150px;
+}
+#ireland21stCenture2{
+	float: none;
+	display: block;
+	width: 80%;
+	padding-bottom: 15px;
+}
+
+
+.footerIreland{
+	clear: both;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	background-color: #F2452B;
+}
+
+
+/*Second page*/
+
+
+.codeIreland{
+	float: left;
+	width: 150px;
+	padding: 10 px;
+	
+}
+.mainIreland2{
+	height: 500px;
+}
 .summaryIreland{
-	float: right; 
+	float: right;
 	border: 2px solid #D8280D; 
-	width: 300px; 
-	height: 600px; 
+	width: 300px;  
+	height: 455px;
 	background-color: white;
 }
 .referencesIreland{
-	text-decoration: underline; 
+	
 	background-color: #F2452B;
 	color: white;
 }
 .listIreland{
 	color: white;
 }
-.footerIreland{}
+
+.textSummary1{
+	color: #D8280D;
+	text-decoration: underline;
+}
+.textSummary2{
+	color: #D8280D;
+}

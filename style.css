@@ -65,42 +65,37 @@ p{
 /*Seperate part for Ireland page - Suzanne*/
 /*First Page*/
 .bodyIreland{
-	background-color:#F78978;
+	background-color:#F78978;/*Changing the background color*/
 	padding-bottom: 80px;
-	margin: 0;
+	margin: 0;/*No margin on the page*/
 }
-
-.wrapperIreland{}
 
 .headerIreland{
-	background-color:#D8280D;
+	background-color:#D8280D;/*Background color for the Title*/
 }
-.title{
+.title{/*Design of the title: color and text align to the center*/
 	color: white;
 	text-align: center;
 }
-#irelandFlag{
+#irelandFlag{/*Ireland flag at the top of the page*/
 	float: left; 
 	width: 95px;
 }
 
-.mainIreland1{
-	/*height: 700px;*/
-}
-.subTitle{
+.subTitle{/*Design of the subTitle*/
 	text-align: center;
 	color: white;
 }
-.container{
-	display: flex;
-	gap: 30px;
+.container{/**/
+	display: flex; /*Activates flexbox layout, placing the child elements side by side*/
+	gap: 30px;/*Sets the spacing between the columns*/
 }
 .container > div{
-	flex: 1;
+	flex: 1; /*Makes every div inside of this div be at the same size, so the page will be equaly distributed*/
 }
 
 
-.sec20{
+.sec20{/*Customising the div, which is one of the columns with the text and images*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -108,9 +103,9 @@ p{
 	padding: 20px;
 }
 .subTitle20, .subTitle21{
-	color: white;
+	color: white;/*Changing the text color*/
 }
-#ireland20thCenture{
+#ireland20thCenture{/*Customising the image, making smaller, with padding, be at the center of the column*/
 	float: none;
 	display: block;
 	width: 65%;
@@ -118,7 +113,7 @@ p{
 	padding-top: 17px;
 }
 
-.sec21{
+.sec21{/*Customising the div, which is one of the columns with the text and images*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -126,22 +121,19 @@ p{
 	padding: 20px;
 	gap: 20px;
 }
-.sec21 .subSec21{
+.sec21 .subSec21{/*Making the image and text inside of the div be side by side*/
 	display: flex;
 	gap: 20px;
 	align-items: flex-start;
 }
-.sec21 .subSec21B{
-	/*float: left;*/
-}
 
 
-#ireland21stCenture{
+#ireland21stCenture{/*Customising the image*/
 	float: none;
 	display: block;
 	width: 150px;
 }
-#ireland21stCenture2{
+#ireland21stCenture2{/*Customising the image*/
 	float: none;
 	display: block;
 	width: 80%;
@@ -149,7 +141,7 @@ p{
 }
 
 
-.footerIreland{
+.footerIreland{/*Customising the bottom of the page, which there is the name of the author and name of the project*/
 	clear: both;
 	left: 0;
 	width: 100%;
@@ -160,13 +152,13 @@ p{
 
 
 /*Second page*/
-.container2{
+.container2{/*Customising the container to the div inside of it be separated in 2 columns and with horizontal gaps*/
 	display: grid;
 	grid-template-columns: 1fr 300px;
 	gap: 20px;
 	max-width: 100%;
 }
-.poverty{
+.poverty{/*Div of the text and image*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -174,7 +166,7 @@ p{
 	padding: 20px;
 }
 
-.povertyImages{
+.povertyImages{/*Block that has just the image, which is located inside of the Poverty div*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -183,7 +175,7 @@ p{
 	gap: 20px;
 }
 /*Making the image responsive*/
-#poverty2_S{
+#poverty2_S{/*Government image - Customising the image for the size, float and other things work*/
 	float: none;
 	display: block;
 	width: 100%;
@@ -191,41 +183,37 @@ p{
 	height: auto;
 }
 
-.summaryIreland{
+.summaryIreland{/*Other div, which is the block with the summary*/
 	float: right;
 	padding: 20px;
 	color: white;
 	background-color: #D8280D;
 }
 
-.line{
+.line{/*Line that separate the summary from the Login block*/
 	border: none;
 	height: 2px;
 	background-color: white;
 	margin: 15px 0;
 }
 
-#codeIreland{
+#codeIreland{/*QR Code for another pdf*/
 	float: left;
 	width: 150px;
 	padding: 10 px;
 	padding-right: 20px;
 	
 }
-.mainIreland2{
-	height: 500px;
-}
 
-.summaryIreland p{
+.summaryIreland p{/*Changing the color and making the text be bold*/
 	color: white;
 	font-weight: bold;
 }
-.referencesIreland{
-	
+.referencesIreland{/*Changing the backgroung and color*/
 	background-color: #F2452B;
 	color: white;
 }
-.listIreland{
+.listIreland{/*Changing the color of the text inside of the list - that it is inside of the summary*/
 	color: white;
 }
 
@@ -299,4 +287,3 @@ p{
     margin-right: 0;
   }
 }
-

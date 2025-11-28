@@ -160,23 +160,65 @@ p{
 
 
 /*Second page*/
+.container2{
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	gap: 20px;
+	max-width: 100%;
+}
+.poverty{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+}
 
+.povertyImages{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	padding: 20px;
+	gap: 20px;
+}
+/*Making the image responsive*/
+#poverty2_S{
+	float: none;
+	display: block;
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+}
 
-.codeIreland{
+.summaryIreland{
+	float: right;
+	padding: 20px;
+	color: white;
+	background-color: #D8280D;
+}
+
+.line{
+	border: none;
+	height: 2px;
+	background-color: white;
+	margin: 15px 0;
+}
+
+#codeIreland{
 	float: left;
 	width: 150px;
 	padding: 10 px;
+	padding-right: 20px;
 	
 }
 .mainIreland2{
 	height: 500px;
 }
-.summaryIreland{
-	float: right;
-	border: 2px solid #D8280D; 
-	width: 300px;  
-	height: 455px;
-	background-color: white;
+
+.summaryIreland p{
+	color: white;
+	font-weight: bold;
 }
 .referencesIreland{
 	
@@ -188,9 +230,9 @@ p{
 }
 
 .textSummary1{
-	color: #D8280D;
-	text-decoration: underline;
+	color: white;
 }
 .textSummary2{
-	color: #D8280D;
+	color: white;
+	
 }

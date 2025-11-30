@@ -46,21 +46,14 @@ p{
 }
 
 /*Seperate part for Index and Info page - Caoimhe*/
-.summary {
-	float: right; 
-	border: 2px solid #D8280D; 
-	width: 300px; 
-	height: 600px; 
-	background-color: white;
-}
-.img1{
-	width: 230px; 
-	float: left;
-}
-.img2 {
-	float: right; 
-	width: 240px
-}
+.summary {float: right; border: 2px solid #D8280D; width: 300px; height: 600px; 
+background-color: white;}
+.img1{width: 230px; float: left;}
+.img2 {float: right; width: 240px}
+.charities{color: white;}
+.references{color: white;}
+.pov{color: white;}
+h4{color: white; text-decoration: underline;}
 
 /*Seperate part for Ireland page - Suzanne*/
 /*First Page*/
@@ -521,4 +514,5 @@ h3.textIndia {
   .main { flex-direction: column; }
   .summary, .summaryIndia { flex: 1 1 100%; }
   .flagBannerIndia { flex-direction: column; }
+
 }

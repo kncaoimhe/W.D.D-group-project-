@@ -215,7 +215,7 @@ body{background-color:#F78978;}
 	color: white;
 }
 .textSummary2{
-	color: white;
+	color:#D8280D;
 	
 }
 
@@ -517,5 +517,6 @@ h3.textIndia {
   .flagBannerIndia { flex-direction: column; }
 
 }
+
 
 

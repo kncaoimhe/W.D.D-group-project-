@@ -52,12 +52,13 @@ p{
 .references{color: white;}
 .pov{color: white;}
 h4{color: white; text-decoration: underline;}
-body{background-color:#F78978;}
-.summaryIn{background-color: #D8280D; float: right; border: 2px solid #D8280D; width: 300px; height: 650px; color: white; }
+body{	background-color:#F78978;}
+.summaryIn{background-color: #D8280D;float: right; border: 2px solid #D8280D; width: 300px; height: 650px; color: white; }
 .img3 {width:140px; float:left;}
 .img31{float:right; width:140px;}
 .footerIn{background-color: #F2452B;}
 .js{float:right;}
+
 
 
 /*Seperate part for Ireland page - Suzanne*/
@@ -450,5 +451,6 @@ body{background-color:#F78978;}
 .container3India{
     flex-direction: column;
 }
+
 
 

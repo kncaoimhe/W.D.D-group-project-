@@ -1,39 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <title>Switzerland – Poverty Overview</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Page settings for mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Nadia Rahman">
     
-	<head>
-	    <title>Sustainability </title>
-		<link rel="stylesheet" href="style.css">
-		<!--Link to style page-->
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Nadia Rahman">
-		<!--This page is made by Nadia Rahman-->
-		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-		<!--Link to Bootstrap-->
-		
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-		<!--Link to Bootstrap-->
-	</head>
-	<body>  
-	    <div id="content">
-		  <nav id="navbar">
-	    <a href="index.html"> Home page </a> <br>
-		<a href="info.html"> Information page </a> <br>
-		<a href="india.html"> India </a> <br>
-		<a href= "about.inda.html"> India and poverty </a> <br> 
-		<a href="ireland.html"> Ireland </a> <br>
-		<a href= "aboutPage_ireland.html"> Ireland and poverty </a><br> 
-		<a href="switzerland.html"> Switzerand </a> <br>
-		<a href= "aboutPage_switxerland.html"> Switcherland and poverty </a> <br>
-			<!--Link to different pages-->
-		  </nav>
-		  <h1>switzerland</h1>
-		  <!--Title of the page-->
-		</div>
-		<footer id="footer">
-		</footer>
-		</div>
-	</body>
+    <!-- Bootstrap for layout/support -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bodySwitzerland">
+    
+    <!-- HEADER: Contains the flag (left) and the page title (right) -->
+    <header class="headerSwitzerland">
+
+        <!-- Swiss flag image -->
+        <img id="swissFlag" src="swissFlag.avif" alt="Switzerland Flag">
+
+        <!-- Main title of the page -->
+        <h1 class="titleCH">Switzerland</h1>
+    </header>
+
+    <main class="mainSwitzerland">
+
+        <!-- NAVIGATION MENU -->
+        <nav class="navbar">
+            <a href="index.html">Home page</a><br>
+            <a href="info.html">Information page</a><br>
+            <a href="india.html">India</a><br>
+            <a href="about_india.html">India and poverty</a><br>
+            <a href="ireland.html">Ireland</a><br>
+            <a href="about_ireland.html">Ireland and poverty</a><br>
+            <a href="switzerland.html">Switzerland</a><br>
+            <a href="about_switzerland.html">Switzerland and poverty</a><br>
+        </nav>
+
+        <!-- MAIN CONTENT CONTAINER -->
+        <div class="containerCH">
+
+            <!-- White content box -->
+            <div class="secCH20">
+			
+                <!-- Subheading -->
+                <h3 class="subTitleCH">Poverty and Financial Struggles in Switzerland, 2018</h3>
+
+                <!-- Paragraph description -->
+                <p>
+                In 2018, Switzerland remained one of the richest countries in Europe, but about 7.9% of the population, or roughly 660,000 people, were income poor. This means their earnings were too low to cover basic needs such as food, housing, and daily expenses. Many others who were not officially poor still faced financial difficulties. For example, 1 in 8 people had trouble paying bills, and around 20% could not afford an unexpected cost of CHF 2,500.
+				Some people with jobs were still poor, showing that having work does not always protect against money problems. Many families could not afford a holiday or lived in homes with issues like noise, dampness, or safety concerns. Although long-term poverty is uncommon in Switzerland, these numbers show that even in a wealthy country, a significant number of people face real financial challenges and stress.
+
+                </p>
+
+                <!-- Image for poverty in 2018 -->
+                <img id="switzerland20th" src="poverty2_S.png" alt="Poverty in Switzerland">
+
+                <!-- Subheading -->
+                <h3 class="subTitleCH">Poverty and Living Standards in Switzerland, 2021</h3>
+
+                <p>
+                 In 2021, about 5.2% of people in Switzerland, or 448,000 people, could not afford important goods, services, or social activities because of money problems. Many could not pay for unexpected costs, replace old furniture, or go on a holiday. The poverty rate was 8.7%, which means these people earned less than the basic income needed for living. People most affected were unemployed, low-income workers, single parents, and some foreigners. Even some people with jobs struggled to make ends meet. Despite this, Switzerland still has one of the highest living standards in Europe.
+                </p>
+
+                <!-- Subheading -->
+                <h3 class="subTitleCH">Income Poverty in Switzerland, 2023</h3>
+
+                <p>
+                 In 2023, based on income from 2022, about 8.1% of the Swiss population lived below the poverty line. People most affected included those living alone, single parents with children, people without further education, and households where no one works. Even some people with jobs earned very little and struggled to cover their basic needs. Many households had difficulty paying bills, buying essential items, or participating in social activities due to money problems. Despite these challenges, Switzerland continues to be one of the richest countries in Europe, with a high overall standard of living, but these numbers show that financial difficulties still affect a significant part of the population.
+                </p>
+
+                <!-- Image for poverty rate 2023 -->
+                <img id="povertyrate2023" src="povertyRate2023.png" alt="Poverty in Switzerland">
+
+                <!-- REFERENCES SECTION (at the bottom of the content box) -->
+                <h5 class="referencesSwitzerland">References</h5>
+                <ul class="listSwitzerland">
+                    <li>Swiss Federal Statistical Office (FSO)</li>
+                    <li>Caritas Switzerland</li>
+                    <li>SWI swissinfo.ch</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footerSwitzerland">
+        <p>2025 Switzerland Poverty Research Project | Developed by Group A | Page by Nadia Rahman</p>
+    </footer>
+	
+</body>
 </html>
+

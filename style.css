@@ -54,6 +54,9 @@ background-color: white;}
 .references{color: white;}
 .pov{color: white;}
 h4{color: white; text-decoration: underline;}
+body{background-color:#F78978;}
+.summaryIn{background-color: #D8280D; float: right; border: 2px solid #D8280D; width: 300px; height: 650px; }
+
 
 /*Seperate part for Ireland page - Suzanne*/
 /*First Page*/
@@ -516,3 +519,4 @@ h3.textIndia {
   .flagBannerIndia { flex-direction: column; }
 
 }
+

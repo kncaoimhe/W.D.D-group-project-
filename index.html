@@ -14,6 +14,8 @@
 <body>
 	<header id="header">
 		<!--images on either side of title-->
+		<img class="img3" src="pov3.jpg" href="poverty"> 
+		<img class="img31" src="pov3.jpg" href="poverty"> <br>
 		<h1> The 17 sustainable development goals: Poverty </h1>
 		<!--add image here--> 
 		
@@ -46,7 +48,7 @@
 	</div>
 		
 	<h3>What is poverty?</h3>
-		<!--insert image here-->
+		<!--image to display poverty--> 
 	<img class="img1" src="pov.jpg" href="poverty">
 		
 			 <p> There is two types of poverty</p>
@@ -75,19 +77,71 @@
 
 			 <h3> References</h3>
 			 <ul class="references">
+				 <!-- websites information came from--> 
 			 	<li> habitat.org </li>
 			 	<li> Unicef.ie </li>
 			 	<li> Trocaire.org </li>
 			 	<li> svp.ie </li>
 			 	<li> Citizeninformation.ie </li>
 			 </ul>
-		<script>
+		
+		<div class="js">
+			<!-- use of javascript for webpage--> 
+			<p class="newsletter">Sign up for newsletter:</p>
+			<label class="newsletter">Your user name:</label><br>
+
+			<input onkeyup="validateData();" id="userName" type="text" /><br>
+
+		    <label class="newsletter">Your email address:</label><br>
+			<input onkeyup="validateData();" id="email" type="email" /><br>
+
+			<label class="newsletter">Your password:</label><br>
+			<input onkeyup="validateData();" id="password" type="password" /><br>
+			<button id="logIn" onclick="authenticateUser();" disabled>Log in</button>
+			
+		</div>
+			<div id="success">
+			<p id="message"></p>
+			<button onclick="logout();">Log out</button>
+			</div>
+
+			<script>
+				/*form validation*/
+			document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("logIn");
+			var sUserName, sEmail, sPassword;
+			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
+			
+			function authenticateUser(){
+				document.getElementById("mainScreen").style.display = "none";
+				document.getElementById("success").style.display = "block";
+				
+				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+				document.getElementById("message").innerHTML = sMessage;			
+			}
+						
+			function logout(){
+				window.location.reload();
+			}
 			
 		</script>
 	</main>
 
 	<footer id="foooter">
-		
+		<!--when and who made webpage--> 
+			<p> 2025 Research on poverty| Developed by group A| page developed by Caoimhe Kelly-Nolan. </p>
 	</footer>
 </body>
 </html>

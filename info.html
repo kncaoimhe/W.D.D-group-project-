@@ -17,6 +17,8 @@
 	<header class="header">
 		<!--main heading on webpage--> 
 		<!--images on either side of title-->
+		<img class="img3" src="pov3.jpg" href="poverty"> 
+		<img class="img31" src="pov3.jpg" href="poverty"> 
 		<h1> The 17 sustainable development goals: Poverty </h1>
 	</header>
 
@@ -42,25 +44,80 @@
 			 		<li> The united nations set up the 17 sustainable development goals in 1945 as world war 2 was ending.</li>
 			 		<li> 193 member states make up the united nations today. </li>
 			 		<li> The main goal of the united nations is to maintain international peace, protect human rights, give aid to countrys in need and maintain international law. </li>
-			 	</ul>
+			 		<li> Many of these goals are not going to be reached within the given timeline of 15 years including no poverty. </li>
+			 		<li> More than half the global population recieve soical protection benefit.</li>
+				</ul>
 
 			 </div>
 		
-		<!-- refernce is united nations webiste--> 
+		<!-- reference is united nations webiste--> 
 		<!--image--> 
 		<img class="img1" src="flags.jpg" alt="image of flags">
 		<h3> Who are the United Nations </h3>
 		<p> The united nations most commonly referred too as the UN were founded in 1945 as world was 2 ended. Currently there is 193 memebers. Some memebrs include India, Ireland and Switzerland. They work to maintain inertantionl seurity and peace, ptotect human rights, give aid to those in need and maintain international law. </p>
 
 		<h3> Why the UN adopted the 17 sustianable devlopment goals </h3>
-		<p> The 17 sustainability goals were adopted by the United Nations (UN) in 2015. These goals were developed as the previous Millennium Developmet Goals expired the end of 2015. </p>
+		<!--imformation on why the goals were devloped--> 
+		<p> The 17 sustainability goals were adopted by the United Nations (UN) in 2015. These goals were developed as the previous Millennium Developmet Goals expired the end of 2015. While wanting to tackle poverty they soon realised that they had to include things such as gender inequality in these 17 goals. These goals are also trying to tackle climate change.</p>
 
 
 			<h3> What are the 17 goals?</h3>
 		 <img class="img2" src="goals.jpg" alt="image of sustainable goals"> 
 		
 			<p> 1. No poverty 2. Zero hunger 3. Good health and Well-being 4. Quaity education 5. Gender equailty 6. Clean warer and sanitation 7. Affordable and clean energy 8. Decent work and econmic growth 9. Industry, innovation and infrastructure 10. Reduced inequalities 11. Sustaianble cities and communities 12. Responsible consumption and production 13. Climate action 14. Life below water 15. Life on land 16. Pease, justice and strong institutions 17. Partnerships for the goals </p>
-			 	
+
+			<h3> When they hope to have the sustaianable development goals implemented by. </h3>
+			 <p> In 2015 when these goals were adopted they stated it was a 15 year plan. This would bring us to 2030. Although these goals have helped millions of people with the current pace of these devlopemtns its not likely they will achieve all of these goals with just five years left. Based on the new report published by the United Nations in 2025, Along with many other goals No poverty is not likely to hit the goal of 2030. Extreme poverty still affects 1 in 10 people. Unless serious action comes into play 8.9% of the global population will still be living in extreme poverty in 2030. More than half the worlds population recieve on form of social protection benefit.  </p>
+
+		 <div class="js">
+			<p class="newsletter">Sign up for newsletter:</p>
+			<label class="newsletter">Your user name:</label><br>
+			<input onkeyup="validateData();" id="userName" type="text" /><br>
+
+		    <label class="newsletter">Your email address:</label><br>
+			<input onkeyup="validateData();" id="email" type="email" /><br>
+
+			<label class="newsletter">Your password:</label><br>
+			<input onkeyup="validateData();" id="password" type="password" /><br>
+			<button id="logIn" onclick="authenticateUser();" disabled>Log in</button>
+			</div>
+		
+			<div id="success">
+			<p id="message"></p>
+			<button onclick="logout();">Log out</button>
+			</div>
+
+			<script>
+			document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("logIn");
+			var sUserName, sEmail, sPassword;
+			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
+			
+			function authenticateUser(){
+				document.getElementById("mainScreen").style.display = "none";
+				document.getElementById("success").style.display = "block";
+			
+				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+				document.getElementById("message").innerHTML = sMessage;			
+			}
+						
+			function logout(){
+				window.location.reload();
+			}
+			
+		</script>
 			<h3> References </h3>
 			 <ul class="references">
 			 	<li> un.org</li>
@@ -72,7 +129,8 @@
 </div>
 	
 	<footer>
-		
+		<p> 2025 Research on United nations | Developed by group A | page developed by Caoimhe Kelly-Nolan. </p>
+
 	</footer>
 </body>
 </html>

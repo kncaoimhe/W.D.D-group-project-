@@ -283,9 +283,6 @@ body{background-color:#F78978;}
 }
 
 /*India & About India page - Fiona*/
-
-/*India & About India page - Fiona*/
-
 .bodyIndia{
 	background-color:#F78978;
 	padding-bottom: 80px;
@@ -325,7 +322,7 @@ body{background-color:#F78978;}
 }
 
 .india-overview{
-	 width:198px;
+	 width:190px;
 	 float:right;
 	 margin-left:20px;
  }
@@ -344,6 +341,7 @@ body{background-color:#F78978;}
 	 margin-left:20px;
 	 margin-bottom:5px;
  }
+
 .india-index-score{
 	 width:300px;
 	 float:right;
@@ -380,7 +378,6 @@ body{background-color:#F78978;}
   background-color:#D8280D;
   color: white;
   padding: 20px;
-
   display:flex;
   flex-direction:column;
   gap: 20px;
@@ -449,7 +446,3 @@ body{background-color:#F78978;}
 .container3India{
     flex-direction: column;
 }
-
-
-
-

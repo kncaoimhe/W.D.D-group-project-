@@ -80,7 +80,10 @@ body{	background-color:#F78978;}
 	float: left; 
 	width: 95px;
 }
-
+#irelandFlag2{
+	float: right;
+	width: 95px;
+}
 .subTitle{/*Design of the subTitle*/
 	text-align: center;
 	color: white;
@@ -451,6 +454,7 @@ body{	background-color:#F78978;}
 .container3India{
     flex-direction: column;
 }
+
 
 
 

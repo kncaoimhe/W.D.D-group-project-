@@ -30,12 +30,12 @@
 						<a href="ireland.html"> Ireland </a> <br>
 						<a href= "aboutPage_ireland.html"> Ireland and poverty </a><br> 
 						<a href="switzerland.html"> Switzerand </a> <br>
-						<a href= "aboutswitzerland.html"> Switcherland and poverty </a> <br><!--These page-->
-				</nav><br>
-						<h4 class="subTitle">The history of poverty in Ireland reflects major social and economic changes over several decades.</h4><!--Subtiltie of the page-->
+						<a href= "aboutPage_switxerland.html"> Switcherland and poverty </a> <br><!--These page-->
+				</nav>
+						
 		<div class="container"><!--The container is for separate the text and images from the navbar so, basically is another wrap for the next informations-->
 			<div class="sec20"><!--Fist little container - Here, I seperated in 2 diferent div to indicate the diferent Centurys-->
-			<h5 class="subTitle20">IRELAND 20th Century Poverty</h5>
+				<h5 class="subTitle20">IRELAND 20th Century Poverty</h5>
 				<img id="ireland20thCenture" src="ireland5_S.png" alt="IRELAND 20th Century Poverty – FIGURE 1"/>
 				<p>Before the 20th Century, Ireland (1845-1860) almost 6 million Irish people emigrated to United States of America (USA) and other part of the world, cause of the Great Famine, what representing almost 30% of population.
 				</p>
@@ -45,7 +45,7 @@
 				</p>
 			</div>
 			<div class="sec21"><!--Sencond little container-->
-			<h5 class="subTitle21">IRELAND 21st Century Poverty</h5>
+				<h5 class="subTitle21">IRELAND 21st Century Poverty</h5>
 				<div class="subSec21"><!--Fist sub container of the Sec 21 - It works to separeta the fist paragraph with its image and the second one with its images-->
 					<img id="ireland21stCenture" src="ireland2_S.jpg" alt="IRELAND 21st Century Poverty – FIGURE 1"/>
 					<p>The Central Statistics Office was established in 1949 as the national statistical office of Ireland  but since 1911 the data was collected about poverty and other economic indicators named Census Reports.</p>
@@ -62,7 +62,41 @@
 							<li>Social Justice Ireland</li>
 						</ul>
 				</div>
+				
 			</div>	
+			<div class="summaryIreland1"><!--The ohter div for the second column of the container. Where it is located the summary and the Sign up form-->
+					<p>12 key goals for Ireland based on 17 UN SDG goals:</p><!--Summary of the Goals that Ireland use-->
+					<ul class="textSummary1">
+						<li>No Poverty</li>
+						<li>Zero Hunger</li>
+						<li>Good Health and Well-Being</li>
+						<li>Quality Education</li>
+						<li>Gender Equality</li>
+						<li>Clean Water and Sanitation</li>
+						<li>Affordable and Clean Energy</li>
+						<li>Decent Work and Economic Growth</li>
+						<li>Industry, Innovation, and Infrastructure</li>
+						<li>Reduced Inequality</li>
+						<li>Sustainable Cities and Communities</li>
+						<li>Responsible Consumption and Production </li>
+					</ul>
+				<hr class="line"><!--Line to separate the summary from the Login form-->
+					<div id="mainScreen"><!--Login part - that uses JS-->
+					<p>Sign up for newsletter:</p><!--Boxes and Button to the Login-->
+						<label class="textSummary2">Your user name:</label><br>
+							<input onkeyup="validateData();" id="userName" type="text" /><br>
+						<label class="textSummary2">Your email address:</label><br>
+							<input onkeyup="validateData();" id="email" type="email" /><br>
+						<label class="textSummary2">Your password:</label><br>
+							<input onkeyup="validateData();" id="password" type="password" /><br>
+						<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
+					</div>
+		
+					<div id="success">
+						<p id="message"></p><!--When it goes right, it will show a message and a button if the person wants to logout-->
+						<button onclick="logout();">Log out</button>
+					</div>
+			</div>
 		</div>
 			
 			</main>
@@ -71,8 +105,41 @@
 				<p>2025 Ireland Poverty Research Porject | Developed by Group A | Page developed by Suzanne Soares</p>
 			</footer><!--Year, Name of the project, Group and Person that developed-->
 		</div>
+		<script>//The hole JS code to make the Login box work - It can be far from the "mainScreen", but it has to be inside of the body
+			document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("myBtn");
+			var sUserName, sEmail, sPassword;
+			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				//NOT = 0, false, "", undefined, null -> TRUE
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
+			
+			function authenticateUser(){
+				document.getElementById("mainScreen").style.display = "none";
+				document.getElementById("success").style.display = "block";
+				//Message that will appear when Login success 
+				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+				document.getElementById("message").innerHTML = sMessage;			
+			}
+						
+			function logout(){
+				window.location.reload();
+			}
+			
+
+		</script>
 	</body>
 </html>
+
 
 
 

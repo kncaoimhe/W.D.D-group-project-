@@ -361,12 +361,9 @@ body{	background-color:#F78978;}
 }
 
 .summaryIndia{/*Summary box*/
- background-color: #D8280D;
-	float: right;
-	border: 2px solid #D8280D; 
-	width: 300px;
-	height: 650px;
-	color: white; 
+  background-color: #D8280D;
+  color: white;
+  padding: 20px;
 }
 .p1{/*Summary title*/
 	color:white;
@@ -398,7 +395,7 @@ body{	background-color:#F78978;}
   margin-top: 10px;
 }
 
-.footerIndia { /*Footer box at bottom of page*/
+.footerIndia {/*Footer box at bottom of page*/
   grid-column: span 2;
   background-color: #F2452B;
   color: white;
@@ -418,47 +415,45 @@ body{	background-color:#F78978;}
 	color:white;
 }
 
-.indianFlag2{/*Image*/
+#indianFlag2{/*Image*/
 	float: left; 
 	width: 90px;
 	height:48px;
 }
 
-.indianFlag1{/*Image*/
+#indianFlag1{/*Image*/
 	float: right; 
 	width: 90px;
 	height:48px;
 }
 
-.taj-mahal{/*Image*/
+#taj-mahal{/*Image*/
   width: 250px;
   float: right;
 }
 
-.sustainable-development{/*Image*/
+#sustainable-development{/*Image*/
 	width: 250px;
 	float: left;
 }
 
-.SDGs{/*Image*/
+#SDGs{/*Image*/
 	width: 200px;
 	float: left;
 }
 
-.india-state-chart{/*Image*/
+#india-state-chart{/*Image*/
 	float: right;
 	width: 250px;
 }
-.india-bar-chart{/*Image*/
+#india-bar-chart{/*Image*/
 	float: left;
 	width: 250px;
 }
-.india-index-score{/*Image*/
+#india-index-score{/*Image*/
 	float: ;
 	width: 250px;
 }
-
-
 
 /*Seperate part for Ireland page - Nadia*/
 /*First Page*/
@@ -720,3 +715,4 @@ body{	background-color:#F78978;}
 
 
 	
+

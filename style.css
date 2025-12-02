@@ -88,13 +88,20 @@ body{	background-color:#F78978;}
 	text-align: center;
 	color: white;
 }
-.container{/**/
-	display: flex; /*Activates flexbox layout, placing the child elements side by side*/
-	gap: 30px;/*Sets the spacing between the columns*/
+.mainIreland1 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 300px;  /* 2 columns and Summary */
+  gap: 30px;
+  
+  /* Had to do this because of Bootstrap - it was blocking my summary to be moved to the right */
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.container > div{
-	flex: 1; /*Makes every div inside of this div be at the same size, so the page will be equaly distributed*/
-}
+
 
 
 .sec20{/*Customising the div, which is one of the columns with the text and images*/
@@ -142,6 +149,11 @@ body{	background-color:#F78978;}
 	padding-bottom: 15px;
 }
 
+.summaryIreland1{/*Other div, which is the block with the summary*/
+	padding: 20px;
+	background-color: #D8280D;
+	color: white;
+}
 
 .footerIreland{/*Customising the bottom of the page, which there is the name of the author and name of the project*/
 	clear: both;
@@ -185,7 +197,7 @@ body{	background-color:#F78978;}
 	height: auto;
 }
 
-.summaryIreland{/*Other div, which is the block with the summary*/
+.summaryIreland2{/*Other div, which is the block with the summary*/
 	float: right;
 	padding: 20px;
 	color: white;
@@ -230,66 +242,70 @@ body{	background-color:#F78978;}
 /*Changing format*/
 /*For tablets*/
 @media (max-width: 992px) {
-  /* Header: title under the flag and in the center */
-  .headerIreland {
+  /*Header: title under the flag and in the center*/
+.headerIreland {
     flex-direction: column;
     text-align: center;
-  }
+}
 
-  .title {
+.title {
     margin: 0;
-  }
+}
 
-  /* Page 1: all columns turning in just 1 */
-  .container {
-    flex-direction: column;
-  }
+/*Page 1: all columns turning in just 1*/
+.mainIreland1 .container {/*Did the same here to cancel Bootstrap and make the summary work*/
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
 
-  .sec21 .subSec21 {
+.sec21 .subSec21 {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-  }
+}
 
-  /* Page 2: grid turning in just one column */
-  .container2 {
+/*Page 2: grid turning in just one column*/
+.container2 {
     grid-template-columns: 1fr;
-  }
+}
 
-  /* Letting the red box be under the hole text - so, Login and Summary will be at the end of the page */
-  .summaryIreland {
+/*Letting the red box be under the hole text - so, Login and Summary will be at the end of the page*/
+.summaryIreland {
     order: 2;
-  }
+ }
 
-  .poverty {
+.poverty {
     order: 1;
-  }
+}
 }
 
 /*For cell phone*/
 @media (max-width: 600px) {
-  /*Navbar: links in block and in the middle of the page*/
-  .navbar {
+/*Navbar: links in block and in the middle of the page*/
+.navbar {
     text-align: center;
-  }
-
-  .navbar a {
-    display: block;
-    padding: 6px 0;
-  }
-
-  #irelandFlag {
-    width: 60px;
-  }
-  .container3 {
-    flex-direction: column;
-  }
-
-  #codeIreland {
-    margin-right: 0;
-  }
 }
 
+.navbar a {
+    display: block;
+    padding: 6px 0;
+}
+
+#irelandFlag {
+    width: 60px;
+}
+.container3 {
+	flex-direction: column;
+}
+
+#codeIreland {
+    margin-right: 0;
+}
 /*India & About India page - Fiona*/
 .bodyIndia{
 	background-color:#F78978;
@@ -454,6 +470,7 @@ body{	background-color:#F78978;}
 .container3India{
     flex-direction: column;
 }
+
 
 
 

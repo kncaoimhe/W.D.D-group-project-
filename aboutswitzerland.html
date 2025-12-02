@@ -1,168 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- This is the page title shown on the browser tab -->
     <title>Switzerland – Poverty Overview</title>
-
-    <!-- Linking external CSS file -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Makes the website mobile-friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Author of the page -->
     <meta name="author" content="Nadia Rahman">
 
-    <!-- Bootstrap CSS and JS (for modern layout support) -->
+    <link rel="stylesheet" href="style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="bodySwitzerland">
     
-    <!-- This is the top banner / header -->
+    <!-- HEADER: Contains the flag (left) and the page title (right) -->
     <header class="headerSwitzerland">
 
-        <!-- Switzerland flag image (aligned left) -->
-        <img id="swissFlag" src="swissFlag.avif" alt="Switzerland Flag">
+        <!-- Swiss flag image -->
+        <img id="swissFlag" src="swissFlag.jpg" alt="Switzerland Flag">
 
-        <!-- Main page title -->
+        <!-- Main title of the page -->
         <h1 class="titleCH">Switzerland</h1>
-
     </header>
 
     <main class="mainSwitzerland">
 
-        <!-- This is the navigation bar (links to other pages) -->
-        <nav class="navbar">
-            <a href="index.html">Home page</a><br>
-            <a href="info.html">Information page</a><br>
-            <a href="india.html">India</a><br>
-            <a href="about_india.html">India and poverty</a><br>
-            <a href="ireland.html">Ireland</a><br>
-            <a href="aboutPage_ireland.html">Ireland and poverty</a><br>
-            <a href="switzerland.html">Switzerland</a><br>
-            <a href="aboutswitzerland.html">Switzerland and poverty</a><br>
-        </nav>
+    <!-- NAV BAR -->
+    <nav class="navbarCH">
+        <a href="index.html">Home page</a>
+        <a href="info.html">Information page</a>
+        <a href="india.html">India</a>
+        <a href="about_india.html">India and poverty</a>
+        <a href="ireland.html">Ireland</a>
+        <a href="about_ireland.html">Ireland and poverty</a>
+        <a href="switzerland.html">Switzerland</a>
+        <a href="about_switzerland.html">Switzerland and poverty</a>
+    </nav>
 
-        <!-- This container holds the left and right content boxes -->
+    <!-- MAIN CONTENT -->
+    <main class="mainCH">
         <div class="containerCH">
 
-            <!-- LEFT section (main text and images) -->
+            <!-- LEFT BOX -->
             <div class="secCH20">
-
-                <!-- Subtitle heading -->
                 <h3 class="subTitleCH">Understanding Poverty in Switzerland</h3>
-
-                <!-- Paragraph explaining poverty -->
                 <p>
-                Despite Switzerland's wealth, poverty is rising because many people have a poor income and cannot fully take part in normal daily life. More than 700,000 people in Switzerland are affected by poverty, and many others live only slightly above the poverty line. These individuals often struggle to cover basic daily needs and must rely on different kinds of support.</p>
-                <p>
-                However, poverty is not only about money. It also affects People's opportunities, confidence, and ability to take part in society. For this reason, Caritas projects focus on more than financial aid. They help people stay socially connected, take part in community life, and regain a sense of control over their own future.
+                    Despite Switzerland's wealth, poverty is rising because many people have a poor income and cannot fully take part in normal daily life. More than 700,000 people in Switzerland are affected by poverty, and many others live only slightly above the poverty line.
                 </p>
-
-                <!-- First image (kept centered) -->
-                <img id="switzerland20th" src="poverty2_S.png" alt="Poverty in Switzerland">
-
-                <!-- Subtitle for the next section -->
-                <h3 class="subTitleCH">Groups at Risk of Poverty</h3>
-
-                <!-- Bullet list of vulnerable groups -->
-                <ul class="textSummary1">
-                    <li>Single adults under 65</li>
-                    <li>Families with 3 or more children</li>
-                    <li>Single-parent households</li>
-                    <li>People with low education levels</li>
-                    <li>Older adults (65+), especially if living alone</li>
-                </ul>
-
+                <p>
+                    Poverty is not only about money it affects opportunities, confidence, and participation in society. Caritas Switzerland works to support people socially, financially, and emotionally.
+                </p>
+				
+				 <img id="swisspoverty" src="swisspoverty_N.avif" alt="Switzerland goals by 2030">
+				
             </div>
 
-            <!-- RIGHT section (signup/login box) -->
-            <div class="secCH21">
+            <!-- RIGHT BOX (Red box with goals & newsletter) -->
+            <div class="secCH21 redBox">
+                <h3 class="subTitleCH">Switzerland's 10 Goals to Reduce Poverty by 2030</h3>
+                <ul class="textSummary1">
+                    <li>Everyone has enough for basic needs</li>
+                    <li>People at risk get help early</li>
+                    <li>Social support stays strong</li>
+                    <li>Jobs pay fairly</li>
+                    <li>Children grow up without poverty</li>
+                    <li>Affordable housing for all</li>
+                    <li>Help is available in tough situations</li>
+                    <li>Equal chances across the country</li>
+                    <li>Migrants are supported to integrate</li>
+                    <li>A strong and fair economy</li>
+                </ul>
+				
+				
 
-                <!-- Newsletter signup form -->
+                <!-- Newsletter inside red box -->
                 <div id="mainScreen">
                     <h6>Sign up for newsletter:</h6>
-
                     <label>Your username:</label><br>
-                    <input onkeyup="validateData();" id="userName" type="text" /><br>
-
+                    <input onkeyup="validateData();" id="userName" type="text"><br>
                     <label>Your email address:</label><br>
-                    <input onkeyup="validateData();" id="email" type="email" /><br>
-
+                    <input onkeyup="validateData();" id="email" type="email"><br>
                     <label>Your password:</label><br>
-                    <input onkeyup="validateData();" id="password" type="password" /><br>
-
-                    <!-- Login button (becomes active when fields are filled) -->
+                    <input onkeyup="validateData();" id="password" type="password"><br>
                     <button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
                 </div>
 
-                <!-- Success message shown after login -->
                 <div id="success">
                     <p id="message"></p>
                     <button onclick="logout();">Log out</button>
                 </div>
-
             </div>
+
         </div>
 
-        <!-- REFERENCES AREA at the bottom -->
-        <div class="container3">
-            <h5 class="referencesSwitzerland">References</h5>
-            <ul class="listSwitzerland">
+        <!-- REFERENCES -->
+        <div class="referencesBox">
+            <h5>References</h5>
+            <ul>
                 <li>Swiss Federal Statistical Office (FSO)</li>
                 <li>Caritas Switzerland</li>
                 <li>SWI swissinfo.ch</li>
             </ul>
         </div>
-
     </main>
 
-    <!-- Footer section -->
     <footer class="footerSwitzerland">
         <p>2025 Switzerland Poverty Research Project | Developed by Group A | Page by Nadia Rahman</p>
     </footer>
 
-
-    <!-- JavaScript (controls the login form) -->
+    <!-- JS -->
     <script>
-        document.getElementById("success").style.display = "none";
-
-        var myTargetElementBtn = document.getElementById("myBtn");
-        var sUserName, sEmail, sPassword;
-        
-        // Checks if the user filled all fields
-        function validateData(){
-            sUserName = document.getElementById("userName").value;
-            sEmail = document.getElementById("email").value;
-            sPassword = document.getElementById("password").value;
-
-            if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
-                myTargetElementBtn.disabled = false;
-            } else {
-                myTargetElementBtn.disabled = true;
-            }
-        }
-        
-        // Shows success message
-        function authenticateUser(){
-            document.getElementById("mainScreen").style.display = "none";
-            document.getElementById("success").style.display = "block";
-
-            var sMessage = "You are now authenticated " + sUserName 
-                + ", your email address is " + sEmail 
-                + " and password " + sPassword + "!";
-
-            document.getElementById("message").innerHTML = sMessage;            
-        }
-
-        // Refreshes the page
-        function logout(){
-            window.location.reload();
-        }
+      document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("myBtn");
+			var sUserName, sEmail, sPassword;
+			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				//NOT = 0, false, "", undefined, null -> TRUE
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
+			
+			function authenticateUser(){
+				document.getElementById("mainScreen").style.display = "none";
+				document.getElementById("success").style.display = "block";
+				//Message that will appear when Login success 
+				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+				document.getElementById("message").innerHTML = sMessage;			
+			}
+						
+			function logout(){
+				window.location.reload();
+			}
     </script>
 
 </body>
 </html>
+
 

@@ -20,57 +20,96 @@
 		
 	</head>
 	<body class="bodyIndia">
-	<div class="wrapperIndia"> 
-    <div class="header">
-	<div class="content">
-
-	<div class="flagBannerIndia">
-	  <img class="indianFlag1" src="indian flag.png" alt="Indian Flag Left">
-	  <h1 class="title">India</h1>
-	  <!--Title of the page-->
-	  <img class="indianFlag2" src="indian flag.png" alt="Indian Flag Right">
-	</div>
-		
-	    <div class="contentIndia">
-		<nav class="navbar">
-        <a href="index.html">Home page</a>
-		<a href="info.html">Information page</a>
-		<a href="india.html">India</a>
-		<a href="about.india.html">India and poverty</a>
-		<a href="ireland.html">Ireland</a>
-		<a href="aboutPage_ireland.html">Ireland and poverty</a>
-		<a href="switzerland.html">Switzerland</a>
-		<a href="aboutPage_switzerland.html">Switzerland and poverty</a>
-		</nav>
-		<!--Link to different pages-->
-		</div>
-		
-		<ul class="textSummary2India"><h5>Summary:</h5>
-		<div class="containerIndia">
-			<li> Poverty Reduction: India lifted 171 million people out of extreme poverty over the past decade.</li>
-			<li> Extreme Poverty Decline: Rates fell from 16.2% in 2011–12 to 2.3% in 2022–23; estimated at 5.75% in 2025.</li>
-			<li> Updated Poverty Line: At $3/day, 5.75% of Indians are still in extreme poverty, down from 27% in 2011–12.</li>
-			<li> Regional Disparities: Highest poverty in Bihar, Jharkhand, Meghalaya; lowest in Kerala and Goa (under 1%)</li>
-			<li> Causes: Education gaps, unemployment, poor healthcare, and social inequality.</li>
-			<li> Government Initiatives: Programs like MGNREGA, PMAY, Ayushman Bharat, and PMJDY target employment, housing, health, and financial inclusion.</li>
-			</ul>
-			
-			<hr class="lineIndia">
-			<div id="mainScreen">
-				<h5 class="textSummary1">Sign up for newsletter:</h5>
-				<label class="textSummary2">Your user name:</label><br>
-				<input onkeyup="validateData();" id="userName" type="text" /><br>
-				<label class="textSummary2">Your email address:</label><br>
-				<input onkeyup="validateData();" id="email" type="email" /><br>
-				<label class="textSummary2">Your password:</label><br>
-				<input onkeyup="validateData();" id="password" type="password" /><br>
-				<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
+		<header class="headerIndia">
+			<img id="indianFlag2" src="indian flag.png" alt="Indian Flag Right">
+			<img id="indianFlag1" src="indian flag.png" alt="Indian Flag Left">
+			<h1 class="title">India</h1>
+		</header>
+		<main class="main">
+			<nav class="navbar">
+        		<a href="index.html">Home page</a>
+				<a href="info.html">Information page</a>
+				<a href="india.html">India</a>
+				<a href="about.india.html">India and poverty</a>
+				<a href="ireland.html">Ireland</a>
+				<a href="aboutPage_ireland.html">Ireland and poverty</a>
+				<a href="switzerland.html">Switzerland</a>
+				<a href="aboutPage_switzerland.html">Switzerland and poverty</a>
+			</nav>
+					<!--Link to different pages-->
+					
+			<div class="container2India">
+				<div class="povertyIndia">
+						<h3 class="textIndia">Overview of poverty in India</h3>
+					<img id="india-state-chart" src="india-state-chart.jpg" alt="Indian state chart">
+					<ul class="textSummary1India">
+					<li>India made a significant process in reducing poverty with the World Bank saying that 171 million people have been lifted out of extreme poverty over the past decade.</li>
+					<li> Extreme poverty, defined as living on less than $2.15 (Rs 44 = €0.43) per day, dropped from 16.2% in 2011-12 to 2.3% in 2022-23. Extreme poverty rate as of 2025 is around 5.75% of the population.</li>
+					<li> The World Bank's updated $3 (Rs 62 = €0.60) per day poverty line, 5.75% of Indians live in extreme poverty, a decrease from 27% in 2011-12.</li>
+					<li> The top states with the highest poverty rates are Bihar (33.76%), Jharkhand (28.81%), Meghalaya (27.79%), Uttar Pradesh (22.93%), Madhya Pradesh (20.63%) and Assam (18.3%).</li>
+					<li> States with the lowest poverty rates are Kerala & Goa (Both under 1%).</li>
+		            </ul>
+					
+						<h3 class="textIndia">Causes of poverty</h3>
+					<img id="india-bar-chart" src="india-bar-chart.jpg" alt="Indian bar chart">
+					<ul class="textSummary2India">
+					<li> Limited access to education</li>
+					<li> Unemployment and underemployment</li>
+					<li> Inadequate healthcare infrastructure</li>
+					<li> Social inequality</li>
+		            </ul>
+					
+						<h3 class="textIndia">Government initatives</h3>
+					<img id="india-index-score" src="india-index-score.png" alt="Indian index score">
+					<ul class="textSummary3India">
+					<li> The Indian government has a lot of different initatives for people going through poverty. The schemes are Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), National Rural Livelihood Mission (DAY-NRLM), Saansad Aadarsh Gram Yojana (SAGY), Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY), National Food Security Act, PM Ujjwala Yojana, Pradhan Mantri Awas Yojana (PMAY), Pradhan Mantri Gram Sadak Yojana (PMGSY), Jal Jeevan Mission, Ayushman Bharat (PM-JAY), Pradhan Mantri Jan Dhan Yojana (PMJDY), Direct Benefit Transfer (DBT), National Social Assistance Programme (NSAP), PM-KISAN & NAVYA. Indian government initiatives for poverty include wage employment guarantees like MGNREGA, livelihood promotion through schemes like DAY-NRLM for self-help groups, and social safety nets for food, housing, and health through programs like PMGKAY, PMAY, and Ayushman Bharat. Other initiatives focus on financial inclusion via PM-JDY and improving rural infrastructure through PMGSY. The current anti-poverty strategy of the government is based broadly on two planks: promotion of economic growth and targeted anti-poverty programmes. Awareness is being spread across the nation specifying the importance of education, which has resulted in an increase in the literacy level.</li>
+					</ul>
+				</div>
+				<div class="summaryIndia">
+				<p class="p1">Summary:</p>
+				<ul>
+					<li> Poverty Reduction: India lifted 171 million people out of extreme poverty over the past decade.</li>
+					<li> Extreme Poverty Decline: Rates fell from 16.2% in 2011–12 to 2.3% in 2022–23; estimated at 5.75% in 2025.</li>
+					<li> Updated Poverty Line: At $3/day, 5.75% of Indians are still in extreme poverty, down from 27% in 2011–12.</li>
+					<li> Regional Disparities: Highest poverty in Bihar, Jharkhand, Meghalaya; lowest in Kerala and Goa (under 1%)</li>
+					<li> Causes: Education gaps, unemployment, poor healthcare, and social inequality.</li>
+					<li> Government Initiatives: Programs like MGNREGA, PMAY, Ayushman Bharat, and PMJDY target employment, housing, health, and financial inclusion.</li>
+				</ul>
+				<hr class="lineIndia">
+				<div id="mainScreen">
+					<h5 class="textSummary1">Sign up for newsletter:</h5>
+					<label class="textSummary2">Your user name:</label><br>
+					<input onkeyup="validateData();" id="userName" type="text" /><br>
+					<label class="textSummary2">Your email address:</label><br>
+					<input onkeyup="validateData();" id="email" type="email" /><br>
+					<label class="textSummary2">Your password:</label><br>
+					<input onkeyup="validateData();" id="password" type="password" /><br>
+					<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
 				</div>
 		
 				<div id="success">
-				<p id="message"></p>
-				<button onclick="logout();">Log out</button>
+					<p id="message"></p>
+					<button onclick="logout();">Log out</button>
 				</div>
+				</div>
+				
+			</div>
+			<div class="container3India">
+				<h5 class="referencesIndia">References:</h5>
+		<ul class="listIndia">
+		<li><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099722104222534584"></a> World Bank. India Poverty and Equity Brief : October 2025 (English). Poverty and Equity Brief Washington, D.C. : World Bank Group.</li>
+		<li><a href="https://www.newindianexpress.com/web-only/2025/May/27/the-number-of-poor-are-falling-in-india-is-it-time-to-shift-the-poverty-line-now"></a> The number of poor are falling in India; is it time to shift the poverty line now?</li>
+		<li><a href="https://www.indiatoday.in/business/story/india-poverty-income-inequality-ppp-mmrp-who-is-poor-world-bank-niti-aayog-2750057-2025-07-03"></a> How poor is 'poor' in India?</li>
+		<li><a href="https://outreach-international.org/blog/poverty-in-india/"></a> Poverty in India: Real-Life Consequences & Sustainable Solutions</li>
+		<li><a href=	"https://vajiramandravi.com/current-affairs/multidimensional-poverty-index/"></a> Multidimensional Poverty Index (MPI), Report 2025, Indicator, Calculation</li>
+		<li><a href="https://www.civitatis.com/blog/en/facts-about-india/?srsltid=AfmBOopPTEtWJ-EMfvkRIwb7DMl7RpZKFeyP7L102-WIIk3hwvdMmLD6"></a>10 Interesting Facts about India</li>
+		<li><a href="https://www.britannica.com/place/India"></a>India</li>
+		</ul>
+			</div>
+			<footer class="footerIndia">
+				<p>India Poverty Research Project 2025 | Developed by Group A | Page developed by Fiona Vincent</p>
+			</footer>
+		</main>
 		<script>
 			document.getElementById("success").style.display = "none";
 			var myTargetElementBtn = document.getElementById("myBtn");
@@ -101,49 +140,5 @@
 				window.location.reload();
 			}
 		</script>
-
-		<div class="mainIndia">
-		<div class="summaryIndia1">
-		<section class="contentSectionIndia">
-		<h3 class="textIndia"> Overview of poverty in India</h3>
-		<img class="india-state-chart" src="india-state-chart.jpg" alt="Indian overview">
-		<p>• India made a significant process in reducing poverty with the World Bank saying that 171 million people have been lifted out of extreme poverty over the past decade.</p>
-		<p>• Extreme poverty, defined as living on less than $2.15 (Rs 44 = €0.43) per day, dropped from 16.2% in 2011-12 to 2.3% in 2022-23. Extreme poverty rate as of 2025 is around 5.75% of the population.</p>
-		<p> • The World Bank's updated $3 (Rs 62 = €0.60) per day poverty line, 5.75% of Indians live in extreme poverty, a decrease from 27% in 2011-12.</p>
-		<p>• The top states with the highest poverty rates are Bihar (33.76%), Jharkhand (28.81%), Meghalaya (27.79%), Uttar Pradesh (22.93%), Madhya Pradesh (20.63%) and Assam (18.3%).</p>
-		<p>• States with the lowest poverty rates are Kerala & Goa (Both under 1%).</p>
-		
-	    <h3 class="textIndia">Causes of poverty</h3>
-		<img class="india-bar-chart" src="india-bar-chart.jpg" alt="Indian bar chart">
-		<p class="p1">• Limited access to education</p>
-		<p class="p1">• Unemployment and underemployment</p>
-		<p class="p1">• Inadequate healthcare infrastructure</p>
-		<p class="p1">• Social inequality</p>
-		
-		<h3 class="textIndia">Government initatives</h3>
-		<img class="india-index-score" src="india-index-score.png" alt="Indian index score">
-         <p class="p1">• The Indian government has a lot of different initatives for people going through poverty. The schemes are Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), National Rural Livelihood Mission (DAY-NRLM), Saansad Aadarsh Gram Yojana (SAGY), Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY), National Food Security Act, PM Ujjwala Yojana, Pradhan Mantri Awas Yojana (PMAY), Pradhan Mantri Gram Sadak Yojana (PMGSY), Jal Jeevan Mission, Ayushman Bharat (PM-JAY), Pradhan Mantri Jan Dhan Yojana (PMJDY), Direct Benefit Transfer (DBT), National Social Assistance Programme (NSAP), PM-KISAN & NAVYA. Indian government initiatives for poverty include wage employment guarantees like MGNREGA, livelihood promotion through schemes like DAY-NRLM for self-help groups, and social safety nets for food, housing, and health through programs like PMGKAY, PMAY, and Ayushman Bharat. Other initiatives focus on financial inclusion via PM-JDY and improving rural infrastructure through PMGSY. The current anti-poverty strategy of the government is based broadly on two planks: promotion of economic growth and targeted anti-poverty programmes. Awareness is being spread across the nation specifying the importance of education, which has resulted in an increase in the literacy level.</p>
-		</div>
-		</div>
-		
-		<div class="container3India">
-		<h5 class="referencesIndia">References:</h5>
-		<img class="india-overview" src="india-overview.jpg" alt="Indian overview">
-		<ul class="listIndia">
-		<li><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099722104222534584"></a> World Bank. India Poverty and Equity Brief : October 2025 (English). Poverty and Equity Brief Washington, D.C. : World Bank Group.</li>
-		<li><a href="https://www.newindianexpress.com/web-only/2025/May/27/the-number-of-poor-are-falling-in-india-is-it-time-to-shift-the-poverty-line-now"></a> The number of poor are falling in India; is it time to shift the poverty line now?</li>
-		<li><a href="https://www.indiatoday.in/business/story/india-poverty-income-inequality-ppp-mmrp-who-is-poor-world-bank-niti-aayog-2750057-2025-07-03"></a> How poor is 'poor' in India?</li>
-		<li><a href="https://outreach-international.org/blog/poverty-in-india/"></a> Poverty in India: Real-Life Consequences & Sustainable Solutions</li>
-		<li><a href=	"https://vajiramandravi.com/current-affairs/multidimensional-poverty-index/"></a> Multidimensional Poverty Index (MPI), Report 2025, Indicator, Calculation</li>
-		<li><a href="https://www.civitatis.com/blog/en/facts-about-india/?srsltid=AfmBOopPTEtWJ-EMfvkRIwb7DMl7RpZKFeyP7L102-WIIk3hwvdMmLD6"></a>10 Interesting Facts about India</li>
-		<li><a href="https://www.britannica.com/place/India"></a>India</li>
-		</ul>
-		<footer class="footerIndia">
-			</section>
-			<div class="summaryIndia">
-				</div>
-		<p>India Poverty Research Project 2025 | Developed by Group A | Page developed by Fiona Vincent</p>
-		</footer>
 	</body>
-
 </html>

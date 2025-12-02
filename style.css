@@ -316,11 +316,15 @@ body{	background-color:#F78978;}
 }
 
 .headerIndia{/*Include color for the link to different pages*/
-	background-color:#D8280D;
+	 background-color:#D8280D;
 }
 .title{/*India title*/
 	color: white;
 	text-align: center;
+}
+
+.navbar{
+	background-color:white;
 }
 
 .container1India{
@@ -335,28 +339,29 @@ body{	background-color:#F78978;}
 	padding: 20px;
 }
 
-.textIndia h3{/*Subtitle text*/
-	width: 100%;
+.textIndia{/*Subtitle text*/
+	background-color:#F2452B;
+	width: 105%;
 	text-align: center;
 	color: white;
 }
 
-.textSummary1India{/*Text*/
+.IndiatextSummary1{/*Text*/
 	color: white;
 	float:right;
 }
 
-.textSummary2India{/*Text*/
+.IndiatextSummary2{/*Text*/
 	color: white;
 	float:left;
 }
 
-.textSummary3India{/*Text*/
+.IndiatextSummary3{/*Text*/
 	color: white;
 	float:right;
 }
 
-.textSummary4India li{/*Text*/
+.IndiatextSummary4 li{/*Text*/
 	color:white;
 }
 
@@ -403,14 +408,7 @@ body{	background-color:#F78978;}
   padding: 15px 0;
   margin-top: 10px;
 }
-
-.textSummary1{/*Newsletter sign up box*/
-	color: white;
-}
-.textSummary2{/*Newsletter sign up box*/
-	color: white;	
-}
-
+	
 .listIndia{/*Reference list*/
 	color:white;
 }
@@ -451,7 +449,7 @@ body{	background-color:#F78978;}
 	width: 250px;
 }
 #india-index-score{/*Image*/
-	float: ;
+	float:right;
 	width: 250px;
 }
 
@@ -715,4 +713,5 @@ body{	background-color:#F78978;}
 
 
 	
+
 

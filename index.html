@@ -45,6 +45,54 @@
 				<li> Reflective poverty is based on calculation of income to family size and age.</li>
 				<li> Poverty can lead to things such as lack of food, water and education. </li>
 			</ul>
+			<p class="newsletter">Sign up for newsletter:</p>
+			<label class="newsletter">Your user name:</label><br>
+			<input onkeyup="validateData();" id="userName" type="text" /><br>
+
+		    <label class="newsletter">Your email address:</label><br>
+			<input onkeyup="validateData();" id="email" type="email" /><br>
+
+			<label class="newsletter">Your password:</label><br>
+			<input onkeyup="validateData();" id="password" type="password" /><br>
+			<button id="logIn" onclick="authenticateUser();" disabled>Log in</button>
+			</div>
+		
+			<div id="success">
+			<p id="message"></p>
+			<button onclick="logout();">Log out</button>
+			</div>
+
+			<script>
+			document.getElementById("success").style.display = "none";
+			var myTargetElementBtn = document.getElementById("logIn");
+			var sUserName, sEmail, sPassword;
+			
+			function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
+			
+			function authenticateUser(){
+				document.getElementById("mainScreen").style.display = "none";
+				document.getElementById("success").style.display = "block";
+			
+				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+				document.getElementById("message").innerHTML = sMessage;			
+			}
+						
+			function logout(){
+				window.location.reload();
+			}
+			
+		</script>
 	</div>
 		
 	<h3>What is poverty?</h3>
@@ -84,59 +132,6 @@
 			 	<li> svp.ie </li>
 			 	<li> Citizeninformation.ie </li>
 			 </ul>
-		
-		<div class="js">
-			<!-- use of javascript for webpage--> 
-			<p class="newsletter">Sign up for newsletter:</p>
-			<label class="newsletter">Your user name:</label><br>
-
-			<input onkeyup="validateData();" id="userName" type="text" /><br>
-
-		    <label class="newsletter">Your email address:</label><br>
-			<input onkeyup="validateData();" id="email" type="email" /><br>
-
-			<label class="newsletter">Your password:</label><br>
-			<input onkeyup="validateData();" id="password" type="password" /><br>
-			<button id="logIn" onclick="authenticateUser();" disabled>Log in</button>
-			
-		</div>
-			<div id="success">
-			<p id="message"></p>
-			<button onclick="logout();">Log out</button>
-			</div>
-
-			<script>
-				/*form validation*/
-			document.getElementById("success").style.display = "none";
-			var myTargetElementBtn = document.getElementById("logIn");
-			var sUserName, sEmail, sPassword;
-			
-			function validateData(){
-				sUserName = document.getElementById("userName").value;
-				sEmail = document.getElementById("email").value;
-				sPassword = document.getElementById("password").value;
-				
-				
-				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
-					myTargetElementBtn.disabled = false;
-				}else{
-					myTargetElementBtn.disabled = true;
-				}
-			}
-			
-			function authenticateUser(){
-				document.getElementById("mainScreen").style.display = "none";
-				document.getElementById("success").style.display = "block";
-				
-				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
-				document.getElementById("message").innerHTML = sMessage;			
-			}
-						
-			function logout(){
-				window.location.reload();
-			}
-			
-		</script>
 	</main>
 
 	<footer id="foooter">

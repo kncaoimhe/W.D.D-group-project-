@@ -458,3 +458,265 @@ body{	background-color:#F78978;}
 	width: 250px;
 }
 
+
+
+/*Seperate part for Ireland page - Nadia*/
+/*First Page*/
+/* Background and default text */
+.bodySwitzerland {
+    background-color: #F78978;
+    margin: 0;
+    padding-bottom: 50px;
+    color: white;
+}
+
+/* HEADER */
+.headerSwitzerland {
+    background-color: #D8280D;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Swiss flag image size */
+#swissFlag {
+    width: 120px;
+    float: left;
+}
+
+.titleCH {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbarCH {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbarCH a {
+    color: #F2452B;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+.navbarCH a:hover {
+    color: #D8280D;
+}
+
+
+.bigRedTitle h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* CONTENT LAYOUT */
+.containerCH {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* LEFT COLUMN */
+.secCH20 {
+    width: 65%;
+    text-align: left;
+}
+
+/* RIGHT COLUMN */
+.secCH21 {
+    width: 35%;
+}
+
+/* RED BOX */
+.redBox {
+    float: right;
+    padding: 20px;
+    color: white;
+    background-color: #D8280D;
+}
+
+/* Subtitles */
+.subTitleCH {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#swisspoverty {
+    width: 800px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Goals list */
+.textSummary1 {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.line{/*Line that separate the summary from the Login block*/
+	border: none;
+	height: 2px;
+	background-color: white;
+	margin: 15px 0;
+}
+
+
+/* Newsletter */
+#mainScreen {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#mainScreen input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+#myBtn {
+    background-color: #D8280D;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* References */
+.referencesBox {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footerSwitzerland {
+    background-color: #F2452B;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Images */
+.swisspoverty {
+    width: 100%;
+    max-width: 550px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+/*second page*/
+/* Background and default text */
+.bodySwitzerland {
+    background-color: #F78978;
+    margin: 0;
+    padding-bottom: 50px;
+    color: white;
+}
+
+/* HEADER */
+.headerSwitzerland {
+    background-color: #D8280D;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Swiss flag image size */
+#swissFlag {
+    width: 120px;
+    float: left;
+}
+
+.titleCH {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbarCH {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbarCH a {
+    color: #F2452B;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+.navbarCH a:hover {
+    color: #D8280D;
+}
+
+
+.bigRedTitle h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* CONTENT LAYOUT */
+.containerCH {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* LEFT COLUMN */
+.secCH20 {
+    width: 65%;
+    text-align: left;
+}
+
+
+/* Subtitles */
+.subTitleCH {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* 2023 poverty rate image */
+#povertyrate2023 {
+    width: 500px;
+    display: block;
+    margin: 0;       
+
+/* References */
+.referencesBox {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footerSwitzerland {
+    background-color: #F2452B;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+	

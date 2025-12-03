@@ -2,7 +2,7 @@
 <html lang="en">
     
 	<head>
-	    <title>Sustainability - Poverty - India</title> <!---Title of the website--->
+	    <title>Sustainability - Poverty - India</title>
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 		<!--Link to Bootstrap-->
@@ -10,7 +10,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 		<!--Link to Bootstrap-->
 		
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style4.css">
 		<!--Link to style page-->
 		
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -22,11 +22,9 @@
 	</head>
 	<body class="bodyIndia"> 
         <header class="headerIndia">
-		  <img class="indianFlag2" src="indian flag.png" alt="Indian Flag Right">
-			<!--First image of Indian flag for beside the title of the page on the right side of the page-->
-		  <img class="indianFlag1" src="indian flag.png" alt="Indian Flag Left">
-			<!--First image of Indian flag for beside the title of the page on the left side of the page-->
-          <h1 class="title">India</h1> <!--Title of the page-->
+		  <img id="indianFlag2" src="indian flag.png" alt="Indian Flag Right">
+		  <img id="indianFlag1" src="indian flag.png" alt="Indian Flag Left">
+          <h1 class="title">India</h1>
 		</header>
           <main class="main">
 		    <nav class="navbar">
@@ -37,15 +35,16 @@
 				<a href="ireland.html">Ireland</a>
 				<a href="aboutPage_ireland.html">Ireland and poverty</a>
 				<a href="switzerland.html">Switzerland</a>
-				<a href="aboutPage_switzerland.html">Switzerland and poverty</a>
+				<a href="aboutswitzerland.html">Switzerland and poverty</a>
 		    </nav>
                 <!--Link to different pages-->
 				
 			<div class="container2India">
                 <div class="povertyIndia">
 				<h3 class="textIndia">Facts about India</h3>
-				<img class="taj-mahal" src="taj-mahal.jpg" alt="Taj Mahal">
-				    <ul class="textSummary1India">
+				<div class="taj-mahal-container">
+				<img id="taj-mahal" src="taj-mahal.jpg" alt="Taj Mahal">
+				    <ul class="IndiatextSummary1">
 				    <li> The population in India is 1.3 billion people. It is the seventh largest country in the world. The capital of India is New Delhi.</li>
 					<li> It is the world's second most populous country. The most populous and cosmopolitan cities in the world are Mumbai, Kolkata & Delhi. The world's fastest growing high technology centers are Bangalore, Chennai & Hyderabad.</li>
 					<li>India has 22 major languages and many more dialects. The official languages in India is English & Hindi.</li>
@@ -53,31 +52,46 @@
 					<li>The iconic Taj Mahal is one of the 7 Wonders of the World. It was designated as a UNESCO World Heritage Site in 1983.</li>
 					<li> The currency used in India is called Indian Rupees (INR).</li>
 				    </ul>
+					</div>
 				
 			<h3 class="textIndia">Facts about sustainability in India</h3>
-			<img class="sustainable-development" src="sustainable-development-india.jpg" alt="sustainable development">
-			<ul class="textSummary2India">
+			<div class="sustainable-development-container">
+			<ul class="IndiatextSummary2">
 				<li> India ranks 109th globally in the Sustainable Development Goals (SDG) Index, with an overall score of 63.99% that has been improving since 2020-21. Renewable energy leadership: India is a major player in the global renewable energy market, with a high ranking in wind and solar power, and it hosts international initiatives like the International Solar Alliance. Progress on SDG goals: India's SDG Index score has improved, and its "Spillover Score" of 95.74% indicates that its actions have a positive impact on other countries' ability to achieve their own goals.  Economic growth vs. environmental cost: While economic development has lifted many out of poverty, it has come with a significant environmental cost, with India having some of the most polluted cities in the world, according to the International Growth Centre (IGC).</li>
 				<li> Lack of collaboration: Despite government initiatives and a growing awareness among consumers, there is a need for more widespread and collaborative efforts. Many initiatives operate in isolation, which limits their overall impact. Consumer behavior: There is evidence of growing consumer interest in sustainable practices. For example, two in every three consumers opt to trade in old devices when buying new ones, and one in four regularly participate in manufacturer-led electronic device recycling programs. Traditional roots: Sustainability is not a new concept for India, as many traditional practices have historically emphasized living in harmony with nature and being resourceful. Challenges and future outlook: While India has made progress, challenges remain in infrastructure development, widespread public awareness of major actions like using renewable energy, and ensuring inclusive and equitable distribution of benefits. The upcoming years are crucial for policymakers, businesses, and individuals to work together to address these issues.</li>
 				</ul>
+				<img id="sustainable-development" src="sustainable-development-india.jpg" alt="sustainable development">
+				</div>
 		
 		<h3 class="textIndia">India & The UN 2030 Agenda Against Poverty</h3>
-		<img class="SDGs" src="sustainable_development_goals_India.jpg" alt="sustainable development goals">
-		<ul class="textSummary3India">
+		<div class="SDGs-container">
+		<img id="SDGs" src="sustainable_development_goals_India.jpg" alt="sustainable development goals">
+		<ul class="IndiatextSummary3">
 			<li> India is actively engaged with the UN's 2030 Agenda for Sustainable Development, aligning its national priorities with the goals of ending poverty and inequality, and fostering inclusive growth. National integration: India has incorporated the 17 SDGs into its national development agenda, emphasizing the principle of "no one left behind". Subnational monitoring: The SDG India Index, developed by NITI Aayog and the United Nations, measures and scores the performance of states and union territories on social, economic, and environmental progress, fostering competition and learning.Cooperative federalism: The country has adopted a cooperative federalism approach to achieve the SDGs, which involves cooperation between the central government, states, and local authorities. South-South cooperation: India also extends its commitment outward through capacity-building and knowledge-sharing with other developing nations. </li>
 			<li> Poverty and hunger: Programs like the Pradhan Mantri MUDRA Yojana provide credit to small businesses to create jobs and improve livelihoods, directly addressing Goal 1 - (No Poverty) and Goal 2 - (Zero Hunger). Economic growth and employment: The government has a "Make in India" initiative to boost manufacturing and a Start-up India program to encourage entrepreneurship, contributing to Goal 8 - (Decent Work and Economic Growth). Health and well-being: Initiatives focus on public health, including a high-speed internet network to improve access to services, supporting Goal 3 - (Good Health and Well-being). Climate action: India has set ambitious targets to reduce its carbon emissions, such as increasing non-fossil fuel-based energy capacity to 500 GW by 2030, aligning with Goal 13 - (Climate Action). Infrastructure: Investments are being made in resilient and sustainable infrastructure, such as the Bharat Broadband Network Ltd for rural connectivity.</li>
 			<li> Global context: Despite India's efforts, the country has a large population and faces challenges in eradicating poverty, though it has made significant progress. Overall ranking: In the 2025 UN Sustainable Development Report, India ranked 99th out of 167 countries, indicating a need for continued and accelerated progress across all goals. Poverty reduction: Recent reports indicate positive trends in employment and a significant reduction in urban unemployment, alongside a rise in self-employment, particularly among women in rural areas.</li>
 			</ul>
+			</div>
         </div>
 		
 		<div class="summaryIndia">
 		<p class="p1">Summary:</p>
 		<ul>
-			<li>Global Ranking: India ranks 99th out of 167 countries in the 2025 UN SDG Report, with a score of 63.99% and steady improvement since 2020–21. Positive Spillover: India’s actions positively influence other countries’ SDG progress, reflected in a high Spillover Score of 95.74%. </li>
-			<li>Renewable Energy Leadership: India is a global leader in solar and wind energy and hosts the International Solar Alliance. Environmental Challenges: Economic growth has reduced poverty but increased pollution, with several Indian cities among the most polluted globally.Traditional Sustainability: Many Indian cultural practices emphasize harmony with nature and resourcefulness. </li>
-			<li>Consumer Behavior: Sustainability awareness is growing—2 in 3 consumers trade in old devices, and 1 in 4 recycle electronics. Collaboration Gaps: Many initiatives operate in isolation; broader collaboration is needed across sectors. National Integration: India has embedded all 17 SDGs into its development agenda, promoting inclusive growth and “no one left behind.”</li>
-			<li>Subnational Monitoring: The SDG India Index tracks state-level progress, encouraging competition and learning. Cooperative Federalism: Central, state, and local governments work together to achieve SDGs. South-South Cooperation: India shares knowledge and builds capacity with other developing nations. Poverty Reduction: Urban unemployment is falling, and rural self-employment—especially among women—is rising.</li>
-			<li> Targeted Programs: Poverty & Hunger: Pradhan Mantri MUDRA Yojana supports small businesses. Employment: “Make in India” and “Start-up India” promote job creation. Health: Public health initiatives and digital infrastructure support Goal 3. Climate Action: India aims for 500 GW of non-fossil fuel energy by 2030. Infrastructure: Bharat Broadband Network expands rural connectivity.</li>
+			<li>India ranks 99th in the 2025 UN SDG Report with a score of 63.99%, showing steady progress. </li>
+			<li>Its Spillover Score of 95.74% highlights positive influence on other countries’ SDG progress. </li>
+			<li>India is a global leader in solar and wind energy and hosts the International Solar Alliance..</li>
+			<li>Economic growth has reduced poverty but increased pollution, with several cities among the most polluted.</li>
+			<li>Traditional cultural practices emphasize sustainability and harmony with nature.</li>
+			<li>Consumer awareness is rising—two in three trade in old devices, and one in four recycle electronics.</li>
+			<li>Many sustainability initiatives operate in isolation, highlighting the need for broader collaboration.</li>
+			<li>India has embedded all 17 SDGs into its national agenda, promoting inclusive growth.</li>
+			<li>The SDG India Index tracks state-level progress, encouraging competition and learning.</li>
+			<li>Cooperative federalism ensures central, state, and local governments work together on SDGs.</li>
+			<li>India engages in South-South cooperation, sharing knowledge and building capacity with other nations.</li>
+			<li>Targeted programs address poverty, jobs, health, climate action, and rural infrastructure expansion.</li>
+			<li>India promotes inclusive growth through national integration of all 17 SDGs, ensuring “no one left behind.”</li>
+			<li>Rural self-employment, especially among women, is rising, contributing to poverty reduction and empowerment.</li>
+			<li>India’s climate action goals include achieving 500 GW of non‑fossil fuel energy capacity by 2030.</li>
 			</ul>
 		   </div>
 		   
@@ -85,22 +99,19 @@
 		   </div>
 		   
 		   	<h5 class="referencesIndia">References:</h5>
-		<ul class="listIndia">
+		    <ul class="listIndia">
 			  <li><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099722104222534584"></a>World Bank. India Poverty and Equity Brief : October 2025 (English). Poverty and Equity Brief Washington, D.C. : World Bank Group.</li>
 			  <li><a href="https://www.newindianexpress.com/web-only/2025/May/27/the-number-of-poor-are-falling-in-india-is-it-time-to-shift-the-poverty-line-now"></a>The number of poor are falling in India; is it time to shift the poverty line now?</li>
 			  <li><a href="https://www.indiatoday.in/business/story/india-poverty-income-inequality-ppp-mmrp-who-is-poor-world-bank-niti-aayog-2750057-2025-07-03"></a>How poor is 'poor' in India?</li>
 			  <li><a href="https://outreach-international.org/blog/poverty-in-india/"></a>Poverty in India: Real-Life Consequences & Sustainable Solutions</li>
 			  <li><a href="https://vajiramandravi.com/current-affairs/multidimensional-poverty-index/"></a>Multidimensional Poverty Index (MPI), Report 2025, Indicator, Calculation</li>
 			  <li><a href="https://www.civitatis.com/blog/en/facts-about-india/?srsltid=AfmBOopPTEtWJ-EMfvkRIwb7DMl7RpZKFeyP7L102-WIIk3hwvdMmLD6"></a>10 Interesting Facts about India</li>
+			  <li><a href="https://www.britannica.com/place/India"></a>India</li>
 		   </ul>
 		   <footer class="footerIndia">
 		   <p>India Poverty Research Project 2025 | Developed by Group A | Page developed by Fiona Vincent</p>
 		</footer>
-			</div 
-				</main>
 	</body>
 
 </html>
-
-
 

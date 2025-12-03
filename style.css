@@ -1,4 +1,4 @@
-/*General style*/
+*General style*/
 
 .body{
 	background-color:#F78978;
@@ -46,17 +46,16 @@ p{
 }
 
 /*Seperate part for Index and Info page - Caoimhe*/
-.img1{width: 230px; float: left;}
-.img2 {float: right; width: 240px}
+#img1{width: 230px; float: left; padding-right: 20px;}
+#img2 {float: right; width: 240px}
+.headerIn{background-color:#D8280D;}
 .charities{color: white;}
 .references{color: white;}
 .pov{color: white;}
-h4{color: white; text-decoration: underline;}
-body{	background-color:#F78978;}
-.summaryIn{background-color: #D8280D;float: right; border: 2px solid #D8280D; width: 300px; height: 650px; color: white; }
-.img3 {width:140px; float:left;}
-.img31{float:right; width:140px;}
-.footerIn{background-color: #F2452B;}
+.summaryIn{background-color: #D8280D; padding: 20px; float: right; width: 300px; height: 550px; color: white; }
+#img3 {width:115px; float:left;}
+#img31{float:right; width:115px;}
+.footerIn{clear: both; left: 0;	width: 100%; text-align: center; padding: 15px 0; background-color: #F2452B;}
 .js{float:right;}
 
 
@@ -307,6 +306,8 @@ body{	background-color:#F78978;}
     margin-right: 0;
 }
 	
+	
+	
 /*India & About India page - Fiona*/
 
 .bodyIndia{/*Title color*/
@@ -317,14 +318,6 @@ body{	background-color:#F78978;}
 
 .headerIndia{/*Include color for the link to different pages*/
 	 background-color:#D8280D;
-}
-.title{/*India title*/
-	color: white;
-	text-align: center;
-}
-
-.navbar{
-	background-color:white;
 }
 
 .container1India{
@@ -415,14 +408,12 @@ body{	background-color:#F78978;}
 
 #indianFlag2{/*Image*/
 	float: left; 
-	width: 90px;
-	height:48px;
+	width: 50px;
 }
 
 #indianFlag1{/*Image*/
-	float: right; 
-	width: 90px;
-	height:48px;
+	float: left; 
+	width: 50;
 }
 
 #taj-mahal{/*Image*/
@@ -553,7 +544,7 @@ body{	background-color:#F78978;}
     padding-left: 10px;
 }
 
-.line{/*Line that separate the summary from the Login block*/
+.line{/Line that separate the summary from the Login block/
 	border: none;
 	height: 2px;
 	background-color: white;
@@ -611,7 +602,7 @@ body{	background-color:#F78978;}
     border-radius: 30px;
 }
 
-/*second page*/
+/second page/
 /* Background and default text */
 .bodySwitzerland {
     background-color: #F78978;
@@ -706,12 +697,12 @@ body{	background-color:#F78978;}
     color: white;
     padding: 15px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px;
 }
 
 
 
-
 	
+
 
 

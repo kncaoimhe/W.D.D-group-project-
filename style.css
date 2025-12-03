@@ -314,90 +314,123 @@ p{
 	
 /*India & About India page - Fiona*/
 
-.bodyIndia{/*Title color*/
-	background-color:#F78978;
-	padding-bottom: 80px;
-	margin: 0;
+.bodyIndia { /* Title color */
+  background-color: #F78978;
+  margin:0;
 }
 
-.headerIndia{/*Include color for the link to different pages*/
-	 background-color:#D8280D;
-}
-
-.container1India{
-	flex-direction: column;
-}
-
-.povertyIndia{/*Poverty text*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: justify;
-	padding: 20px;
-}
-
-.textIndia{/*Subtitle text*/
-	background-color:#F2452B;
-	width: 105%;
-	text-align: center;
-	color: white;
-}
-
-.IndiatextSummary1{/*Text*/
-	color: white;
-	float:right;
-}
-
-.IndiatextSummary2{/*Text*/
-	color: white;
-	float:left;
-}
-
-.IndiatextSummary3{/*Text*/
-	color: white;
-	float:right;
-}
-
-.IndiatextSummary4 li{/*Text*/
-	color:white;
-}
-
-.summaryIndia{/*Summary box*/
+.headerIndia { /* Include color for the link to different pages */
   background-color: #D8280D;
-  color: white;
+}
+
+.title{/*title*/
+	color: white;
+	text-align: center;
+	height:48px;
+}
+
+.navbar a{
+	color: #D8280D;
+}
+.navbar{
+	background-color: white;	
+}
+	
+.container1India {
+  display: flex;
+  flex-direction: column;
+}
+
+.povertyIndia { /* Poverty text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
   padding: 20px;
 }
-.p1{/*Summary title*/
-	color:white;
-	font-weight:bold;
-}
-.container2India{/*Summary box & poverty text*/
-	display: grid;
-	grid-template-columns: 1fr 300px;
-	max-width: 100%; 
+
+.textIndia { /* Subtitle text */
+  background-color: #F2452B;
+  width: 105%; 
+  text-align: center;
+  color: white;
+  margin-top:-20px;
 }
 
-.lineIndia{
-	border: none;
-	height: 2px;
-	background-color: white;
-	margin: 15px 0;
+.IndiatextSummary1,
+.IndiatextSummary2,
+.IndiatextSummary3 {
+  color: white;
 }
 
-.container3India{/*References box*/
-	flex-direction: column;
-	clear:both;
+.IndiatextSummary1{
+  overflow: visible;
+  color: white;
+  margin: 0;
+  padding-left: 0;
+  flex: 1;
 }
 
-.referencesIndia {/*References*/
+.IndiatextSummary2{ 
+  overflow: visible;
+  color: white;
+  margin: 0;
+  padding-right: 0;
+  flex: 1;
+ }
+ 
+.IndiatextSummary3{  
+  overflow: visible;
+  color: white;
+  margin: 0;
+  padding-left: 0;
+  flex: 1;
+}
+
+.IndiatextSummary4{ /* Text */
+  color: white;
+}
+
+.summaryIndia { /* Summary box */
+  background-color: #D8280D;
+  width:100%;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.p1{ /* Summary title */
+  color: white;
+  font-weight: bold;
+  margin-top:0px;
+}
+
+.container2India { /* Summary box & poverty text */
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  max-width: 100%;
+}
+
+.lineIndia {
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin: 15px 0;
+}
+
+.container3India { /* References box */
+  display: flex;
+  flex-direction: column;
+  clear: both;
+}
+
+.referencesIndia { /* References */
   grid-column: span 2;
   background-color: #F2452B;
   color: white;
-  padding: 10px;
-  margin-top: 10px;
 }
 
-.footerIndia {/*Footer box at bottom of page*/
+.footerIndia { /* Footer box at bottom of page */
   grid-column: span 2;
   background-color: #F2452B;
   color: white;
@@ -405,47 +438,126 @@ p{
   padding: 15px 0;
   margin-top: 10px;
 }
-	
-.listIndia{/*Reference list*/
-	color:white;
+
+.listIndia { /* Reference list */
+  color: white;
 }
 
-#indianFlag2{/*Image*/
-	float: left; 
-	width: 50px;
-}
-
-#indianFlag1{/*Image*/
-	float: left; 
-	width: 50;
-}
-
-#taj-mahal{/*Image*/
-  width: 250px;
+/* Images */
+#indianFlag1 {
   float: right;
+  width: 72px;
 }
 
-#sustainable-development{/*Image*/
-	width: 250px;
-	float: left;
+ #indianFlag2 {
+  float: left;
+  width: 72px; 
 }
 
-#SDGs{/*Image*/
-	width: 200px;
-	float: left;
+#taj-mahal {
+ width: 350px;
+ align-self: flex-start;
+ margin-top: -2px;
+ margin-right: 15px;
+ margin-left:-15px;
+ display: block;
+
 }
 
-#india-state-chart{/*Image*/
-	float: right;
-	width: 250px;
+#sustainable-development {
+ width: 400px;
+ align-self: flex-start;
+ margin-top: 110px;
+ margin-right: auto;
+ display: block;
 }
-#india-bar-chart{/*Image*/
-	float: left;
-	width: 250px;
+
+#SDGs {
+ width: 450px;
+ align-self: flex-start;
+ margin-top: 200px;
+ margin-right: auto;
+ display: block;
 }
-#india-index-score{/*Image*/
-	float:right;
-	width: 250px;
+
+#india-state-chart {
+ width: 250px;
+ align-self: flex-start;
+ margin-top: 5px;
+ margin-right: 15px;
+ margin-left:-10px;
+ display: block;
+ 
+}
+
+#india-bar-chart {
+ width: 350px;
+ align-self: flex-start;
+ margin-right:-10px;
+ margin-left:15px;
+ display: block;
+ gap:10px;
+}
+
+#india-index-score {
+ width: 500px;
+ align-self: flex-start;
+ margin-top: 30px;
+ margin-right: 10px;
+ margin-left:-10px;
+ display: block;
+}
+
+.taj-mahal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.sustainable-development-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.SDGs-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.state-chart-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;	
+  margin-bottom:30px;
+}
+
+.bar-chart-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin-bottom:25px;
+}
+
+.index-score-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
 }
 
 /*Seperate part for Ireland page - Nadia*/
@@ -678,6 +790,7 @@ p{
 
 
 	
+
 
 
 

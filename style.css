@@ -322,19 +322,6 @@ p{
 .headerIndia { /* Include color for the link to different pages */
   background-color: #D8280D;
 }
-
-.title{/*title*/
-	color: white;
-	text-align: center;
-	height:48px;
-}
-
-.navbar a{
-	color: #D8280D;
-}
-.navbar{
-	background-color: white;	
-}
 	
 .container1India {
   display: flex;
@@ -790,6 +777,7 @@ p{
 
 
 	
+
 
 
 

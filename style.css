@@ -30,10 +30,13 @@ p{
 
 .navbar a{
 	color: #D8280D;
+    text-decoration: underline;
+    margin: 0 10px;
 }
 .navbar{
 	background-color: white;
-	
+    text-align: center;      
+    padding: 8px 0;
 }
 .main{
 	
@@ -675,6 +678,7 @@ p{
 
 
 	
+
 
 
 

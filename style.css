@@ -446,114 +446,98 @@ p{
 
 /*Seperate part for Ireland page - Nadia*/
 /*First Page*/
-/* Background and default text */
-.bodySwitzerland {
+/* Page background */
+.swissBody {
     background-color: #F78978;
     margin: 0;
     padding-bottom: 50px;
     color: white;
 }
 
-/* HEADER */
-.headerSwitzerland {
+/* Header */
+.swissHeader {
     background-color: #D8280D;
     padding: 20px;
     text-align: center;
     position: relative;
 }
 
-/* Swiss flag image size */
-#swissFlag {
+#swissFlagImg {
     width: 120px;
     float: left;
 }
 
-.titleCH {
+.swissTitle {
     color: white;
     font-size: 38px;
     font-weight: bold;
     margin: 0;
 }
 
-/* NAVBAR */
-.navbarCH {
+/* Navbar */
+.swissNavbar {
     background-color: white;
     padding: 10px;
     text-align: center;
 }
 
-.navbarCH a {
+.swissNavbar a {
     color: #F2452B;
     margin: 0 15px;
     text-decoration: underline;
 }
 
-.navbarCH a:hover {
+.swissNavbar a:hover {
     color: #D8280D;
 }
 
-
-.bigRedTitle h2 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* CONTENT LAYOUT */
-.containerCH {
+/* Layout */
+.swissContainer {
     display: flex;
     gap: 20px;
     max-width: 100%;
 }
 
-/* LEFT COLUMN */
-.secCH20 {
-    width: 65%;
+/* Left side */
+.swissLeftBox {
+    width: 70%;
     text-align: left;
 }
 
-/* RIGHT COLUMN */
-.secCH21 {
-    width: 35%;
+/* Right side */
+.swissRightBox {
+    width: 30%;
 }
 
-/* RED BOX */
-.redBox {
-    float: right;
+/* Red box */
+.swissRedBox {
     padding: 20px;
-    color: white;
     background-color: #D8280D;
+    color: white;
 }
 
 /* Subtitles */
-.subTitleCH {
+.subtitle1Swiss {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
 }
 
-#swisspoverty {
+/* image */
+#swissPovertyImg {
     width: 800px;
     display: block;
     margin: 20px auto;
 }
 
 /* Goals list */
-.textSummary1 {
+.swissGoalsList {
     list-style-position: inside;
     padding-left: 10px;
 }
 
-.line{/Line that separate the summary from the Login block/
-	border: none;
-	height: 2px;
-	background-color: white;
-	margin: 15px 0;
-}
-
-
-/* Newsletter */
-#mainScreen {
+/* Newsletter box */
+#swissNewsletterBox {
     background-color: white;
     color: black;
     padding: 15px;
@@ -561,14 +545,14 @@ p{
     margin-top: 20px;
 }
 
-#mainScreen input {
+#swissNewsletterBox input {
     width: 100%;
     margin-bottom: 12px;
     padding: 6px;
     border: 1px solid #ccc;
 }
 
-#myBtn {
+#btnLogin {
     background-color: #D8280D;
     color: white;
     padding: 8px 12px;
@@ -577,29 +561,25 @@ p{
     cursor: pointer;
 }
 
+/* Success message box */
+#swissSuccessBox {
+    margin-top: 15px;
+}
+
 /* References */
-.referencesBox {
+.swissReferences {
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
 }
 
 /* Footer */
-.footerSwitzerland {
+.swissFooter {
     background-color: #F2452B;
     color: white;
     padding: 15px;
     text-align: center;
     margin-top: 20px;
-}
-
-/* Images */
-.swisspoverty {
-    width: 100%;
-    max-width: 550px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 30px;
 }
 
 /second page/
@@ -703,6 +683,7 @@ p{
 
 
 	
+
 
 
 

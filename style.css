@@ -582,107 +582,99 @@ p{
     margin-top: 20px;
 }
 
-/second page/
-/* Background and default text */
-.bodySwitzerland {
-    background-color: #F78978;
-    margin: 0;
-    padding-bottom: 50px;
+/*second page*/
+/* Layout container */
+.swissContainer {
+    display: flex;
+    max-width: 100%;
+    padding: 0px;
+}
+
+/* Left column */
+.swissLeftBox {
+    width: 70%;
     color: white;
 }
 
-/* HEADER */
-.headerSwitzerland {
+/* Red summary box on right */
+.swissSummaryBox {
+    width: 30%;
     background-color: #D8280D;
     padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-/* Swiss flag image size */
-#swissFlag {
-    width: 120px;
-    float: left;
-}
-
-.titleCH {
     color: white;
-    font-size: 38px;
-    font-weight: bold;
-    margin: 0;
 }
 
-/* NAVBAR */
-.navbarCH {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.navbarCH a {
-    color: #F2452B;
-    margin: 0 15px;
-    text-decoration: underline;
-}
-
-.navbarCH a:hover {
-    color: #D8280D;
-}
-
-
-.bigRedTitle h2 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* CONTENT LAYOUT */
-.containerCH {
-    display: flex;
-    gap: 20px;
-    max-width: 100%;
-}
-
-/* LEFT COLUMN */
-.secCH20 {
-    width: 65%;
-    text-align: left;
-}
-
-
-/* Subtitles */
-.subTitleCH {
+.subtitle1Swiss {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
 }
 
+/* Section title centered */
+.sectionTitleSwiss {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
-/* 2023 poverty rate image */
-#povertyrate2023 {
-    width: 500px;
-    display: block;
-    margin: 0;       
+/* Content row: image and text */
+.contentRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.reverseRow {
+    flex-direction: row-reverse; /* This can be used if you want text on right, image on left */
+}
+
+.contentImg {
+    max-width: 45%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contentText {
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
 /* References */
-.referencesBox {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
+.referencesTitleSwiss {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.referenceListSwiss {
+    margin-left: 15px;
 }
 
 /* Footer */
-.footerSwitzerland {
+.swissFooter {
     background-color: #F2452B;
     color: white;
     padding: 15px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px;
+}
+
+/* Summary list */
+.swissSummaryList {
+    list-style-position: inside;
+    padding-left: 10px;
 }
 
 
 
 	
+
 
 
 

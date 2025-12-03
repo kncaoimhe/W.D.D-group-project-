@@ -11,60 +11,105 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body>
-	<header id="header">
+<body class="body">
+<div class="wrapper">
+	<header class="header">
 		<!--images on either side of title-->
-		<img class="img3" src="pov3.jpg" href="poverty"> 
-		<img class="img31" src="pov3.jpg" href="poverty"> <br>
-		<h1> The 17 sustainable development goals: Poverty </h1>
+		<img id="img3" src="pov3.jpg" href="poverty"> 
+		<img id="img31" src="pov3.jpg" href="poverty"> <br>
+		<h1 class="title"> The 17 sustainable development goals: Poverty </h1>
 		<!--add image here--> 
-		
 	</header>
-
-	<nav class="navbar">
-		<a href="index.html"> Home page </a> 
-		<a href="info.html"> Information page </a>
-		<a href="india.html"> India </a>
-		<a href= "about.inda.html"> India and poverty </a> 
-		<a href="ireland.html"> Ireland </a>
-		<a href= "aboutPage_ireland.html"> Ireland and poverty </a>
-		<a href="switzerland.html"> Switzerand </a>
-		<a href= "aboutswitzerland.html"> Switcherland and poverty </a>
-		<!-- link to rest of website--> 
-	</nav>
-
+	
 	<main class="main">
 		<!--main content of page here--> 
+		<nav class="navbar">
+			<a href="index.html"> Home page </a> 
+			<a href="info.html"> Information page </a>
+			<a href="india.html"> India </a>
+			<a href= "about.inda.html"> India and poverty </a> 
+			<a href="ireland.html"> Ireland </a>
+			<a href= "aboutPage_ireland.html"> Ireland and poverty </a>
+			<a href="switzerland.html"> Switzerand </a>
+			<a href= "aboutswitzerland.html"> Switcherland and poverty </a>
+			<!-- link to rest of website--> 
+		</nav>
+		<div class="container">
+			<div class="summaryIn">
+				<h3>Summary</h3>
+				<!--summary of information on webpage--> 
+					<ul>
+						<li> There are two types of poverty absoulte and reflective</li>
+						<li> Absoulte is when a persons income are unable to meet basic survival needs.</li>
+						<li> Reflective poverty is based on calculation of income to family size and age.</li>
+						<li> Poverty can lead to things such as lack of food, water and education. </li>
+					</ul>
+					<hr class="line"><br>
+					<div id="mainScreen">
+					<p class="newsletter">Sign up for newsletter:</p>
+						<label class="textSummary2">Your user name:</label><br>
+							<input onkeyup="validateData();" id="userName" type="text" /><br>
+						<label class="textSummary2">Your email address:</label><br>
+							<input onkeyup="validateData();" id="email" type="email" /><br>
+						<label class="textSummary2">Your password:</label><br>
+							<input onkeyup="validateData();" id="password" type="password" /><br>
+						<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
+					</div>
 		
-		<div class="summaryIn">
-		<h2> Summary </h2>
-		<!--summary of information on webpage--> 
-			<ul>
-				<li> There are two types of poverty absoulte and reflective</li>
-				<li> Absoulte is when a persons income are unable to meet basic survival needs.</li>
-				<li> Reflective poverty is based on calculation of income to family size and age.</li>
-				<li> Poverty can lead to things such as lack of food, water and education. </li>
-			</ul>
-			<p class="newsletter">Sign up for newsletter:</p>
-			<label class="newsletter">Your user name:</label><br>
-			<input onkeyup="validateData();" id="userName" type="text" /><br>
-
-		    <label class="newsletter">Your email address:</label><br>
-			<input onkeyup="validateData();" id="email" type="email" /><br>
-
-			<label class="newsletter">Your password:</label><br>
-			<input onkeyup="validateData();" id="password" type="password" /><br>
-			<button id="logIn" onclick="authenticateUser();" disabled>Log in</button>
+					<div id="success">
+						<p id="message"></p>
+						<button onclick="logout();">Log out</button>
+					</div>
 			</div>
+			
+				<h3>What is poverty?</h3>
+					<!--image to display poverty--> 
+					<img id="img1" src="pov.jpg" href="poverty">
 		
-			<div id="success">
-			<p id="message"></p>
-			<button onclick="logout();">Log out</button>
-			</div>
+					<p>There is two types of poverty</p>
+					<ul class="references">
+						<li> Absolute poverty </li>
+						<li> Relative poverty </li>
+					</ul>
 
-			<script>
+				<h4> Absolute poverty </h4>
+					<p> Absolute poverty is defined as when a persons income and resources are unable to meet basic survial needs.</p>
+				<h4> Relative poverty </h4>
+					<p> Relative poverty is based on the calculation of income compared to family sizes and age. This calculation is Ireland is knowing as a living wage. </p>
+
+				<h3> What can poverty mean for people </h3>
+					<!--insert image here--> 
+					<img id="img2" src="pov2.jpg" href="poverty">
+					<p> Poverty can lead to lack of basic needs such as food, healthcare, education, safe and adequate housing and politcal and social inculsion. </p>
+
+				<h3> Charities who help those suffering from poverty. </h3>
+					<p> A charity is an organisation with the purpose of public benefit. It must use all its reasources including propety and finical to aid its purpose. There is a number of chairites who aid those struggling with poverty both nationally and internationally. Here is a list of some.</p>
+					<ul class="charities">
+						<li>Unicef Ireland. Unicef aid children in need. Children in places such as war zones and 3rd world countires. </li>
+						<li> Trócaire, are an internaitonal charity who help tackle underlying causes of povery.  </li>
+						<li>St. Vincent De Paul, try provide immidiate relief to families in need but also try find underlying cause of poverty in the families they see. </li>
+					</ul>
+
+				<h3> References</h3>
+					<ul class="references">
+					<!-- websites information came from--> 
+						<li> habitat.org </li>
+						<li> Unicef.ie </li>
+						<li> Trocaire.org </li>
+						<li> svp.ie </li>
+						<li> Citizeninformation.ie </li>
+					</ul>
+			
+		</div>
+	</main>	
+		<footer class="footerIn">
+			<!--when and who made webpage--> 
+			<p> 2025 Research on poverty| Developed by group A| page developed by Caoimhe Kelly-Nolan. </p>
+		</footer>
+</div>		
+	<script>
 			document.getElementById("success").style.display = "none";
-			var myTargetElementBtn = document.getElementById("logIn");
+			var myTargetElementBtn = document.getElementById("myBtn");
 			var sUserName, sEmail, sPassword;
 			
 			function validateData(){
@@ -72,7 +117,7 @@
 				sEmail = document.getElementById("email").value;
 				sPassword = document.getElementById("password").value;
 				
-				
+				//NOT = 0, false, "", undefined, null -> TRUE
 				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
 					myTargetElementBtn.disabled = false;
 				}else{
@@ -83,7 +128,7 @@
 			function authenticateUser(){
 				document.getElementById("mainScreen").style.display = "none";
 				document.getElementById("success").style.display = "block";
-			
+				//Message that will appear when Login success 
 				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
 				document.getElementById("message").innerHTML = sMessage;			
 			}
@@ -92,51 +137,7 @@
 				window.location.reload();
 			}
 			
-		</script>
-	</div>
-		
-	<h3>What is poverty?</h3>
-		<!--image to display poverty--> 
-	<img class="img1" src="pov.jpg" href="poverty">
-		
-			 <p> There is two types of poverty</p>
-			 <ul>
-			 	<li> Absolute poverty </li>
-			 	<li> Relative poverty </li>
-			 </ul>
-
-			 <h4> Absolute poverty </h4>
-			 <p> Absolute poverty is defined as when a persons income and resources are unable to meet basic survial needs.</p>
-			 <h4> Relative poverty </h4>
-			 <p> Relative poverty is based on the calculation of income compared to family sizes and age. This calculation is Ireland is knowing as a living wage. </p>
-
-			 <h3> What can poverty mean for people </h3>
-		<!--insert image here--> 
-			 <img class="img2" src="pov2.jpg" href="poverty">
-			 <p> Poverty can lead to lack of basic needs such as food, healthcare, education, safe and adequate housing and politcal and social inculsion. </p>
-
-			 <h3> Charities who help those suffering from poverty. </h3>
-			 <p> A charity is an organisation with the purpose of public benefit. It must use all its reasources including propety and finical to aid its purpose. There is a number of chairites who aid those struggling with poverty both nationally and internationally. Here is a list of some.</p>
-			 <ul class="charities">
-			 	<li>Unicef Ireland. Unicef aid children in need. Children in places such as war zones and 3rd world countires. </li>
-			 	<li> Trócaire, are an internaitonal charity who help tackle underlying causes of povery.  </li>
-			 	<li>St. Vincent De Paul, try provide immidiate relief to families in need but also try find underlying cause of poverty in the families they see. </li>
-			 </ul>
-
-			 <h3> References</h3>
-			 <ul class="references">
-				 <!-- websites information came from--> 
-			 	<li> habitat.org </li>
-			 	<li> Unicef.ie </li>
-			 	<li> Trocaire.org </li>
-			 	<li> svp.ie </li>
-			 	<li> Citizeninformation.ie </li>
-			 </ul>
-	</main>
-
-	<footer id="foooter">
-		<!--when and who made webpage--> 
-			<p> 2025 Research on poverty| Developed by group A| page developed by Caoimhe Kelly-Nolan. </p>
-	</footer>
+	</script>	
 </body>
 </html>
+

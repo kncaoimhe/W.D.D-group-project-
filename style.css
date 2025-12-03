@@ -52,7 +52,7 @@ p{
 /*Seperate part for Index and Info page - Caoimhe*/
 #img1{width: 230px; float: left; padding-right: 20px;}
 #img2 {float: right; width: 240px}
-.bodyIn{background-color:#F78978; padding-bottom: 80px;	margin: 0;}
+.bodyIn{background-color:#F78978; padding-bottom: 80px;	margin: 0; font-family: 'Roboto', sans-serif;}
 .headerIn{background-color:#D8280D;}
 .charities{color: white;}
 .references{color: white;}
@@ -71,6 +71,7 @@ p{
 	background-color:#F78978;/*Changing the background color*/
 	padding-bottom: 80px;
 	margin: 0;/*No margin on the page*/
+	font-family: 'Roboto', sans-serif;
 }
 
 .headerIreland{
@@ -318,6 +319,7 @@ p{
 .bodyIndia { /* Title color */
   background-color: #F78978;
   margin:0;
+font-family: 'Roboto', sans-serif;
 }
 
 .headerIndia { /* Include color for the link to different pages */
@@ -556,6 +558,7 @@ p{
     margin: 0;
     padding-bottom: 50px;
     color: white;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -778,6 +781,7 @@ p{
 
 
 	
+
 
 
 

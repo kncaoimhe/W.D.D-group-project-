@@ -568,9 +568,14 @@ font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
-#swissFlagImg {
+#swissFlagImg1 {
     width: 120px;
     float: left;
+}
+
+#swissFlagImg2 {
+    width: 120px;
+    float: right;
 }
 
 .swissTitle {
@@ -801,6 +806,7 @@ font-family: 'Roboto', sans-serif;
 
 
 	
+
 
 
 

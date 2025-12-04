@@ -27,9 +27,7 @@ h5{
 p{
 	
 }
-.footerText{
-	color: white;
-}
+
 
 .navbar a{
 	color: #D8280D;
@@ -48,7 +46,7 @@ p{
 	float: right;
 }
 .footer{
-	
+	color: white;
 }
 
 /*Seperate part for Index and Info page - Caoimhe*/
@@ -808,6 +806,7 @@ font-family: 'Roboto', sans-serif;
 
 
 	
+
 
 
 

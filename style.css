@@ -558,7 +558,6 @@ font-family: 'Roboto', sans-serif;
     margin: 0;
     padding-bottom: 50px;
     color: white;
-	font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -627,10 +626,21 @@ font-family: 'Roboto', sans-serif;
 .subtitle1Swiss {
     font-size: 22px;
     font-weight: bold;
+	width: 110%;
     margin-top: 20px;
+	text-align: center;
+	background-color: #F2452B;
+	color: white;
 }
 
-/* image */
+.subtitle2Swiss {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+	text-align: center;
+}
+
+/* Poverty image */
 #swissPovertyImg {
     width: 800px;
     display: block;
@@ -675,9 +685,10 @@ font-family: 'Roboto', sans-serif;
 
 /* References */
 .swissReferences {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
+    width: 110%;
+    margin-top: 0px;
+	background-color: #F2452B;
+	color: white;
 }
 
 /* Footer */
@@ -688,6 +699,7 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 20px;
 }
+
 
 /*second page*/
 /* Layout container */
@@ -719,11 +731,13 @@ font-family: 'Roboto', sans-serif;
 
 /* Section title centered */
 .sectionTitleSwiss {
-    font-size: 24px;
+     font-size: 22px;
     font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+	width: 110%;
+    margin-top: 20px;
+	text-align: center;
+	background-color: #F2452B;
+	color: white;
 }
 
 /* Content row: image and text */
@@ -736,7 +750,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .reverseRow {
-    flex-direction: row-reverse; /* This can be used if you want text on right, image on left */
+    flex-direction: row-reverse; 
 }
 
 .contentImg {
@@ -754,9 +768,12 @@ font-family: 'Roboto', sans-serif;
 
 /* References */
 .referencesTitleSwiss {
-    margin-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+	width: 110%;
+    margin-top: 20px;
+	background-color: #F2452B;
+	color: white;
 }
 
 .referenceListSwiss {
@@ -781,6 +798,7 @@ font-family: 'Roboto', sans-serif;
 
 
 	
+
 
 
 

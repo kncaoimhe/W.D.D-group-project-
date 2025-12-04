@@ -52,7 +52,7 @@ p{
 /*Seperate part for Index and Info page - Caoimhe*/
 #img1{width: 230px; float: left; padding-right: 20px;}
 #img2 {float: right; width: 240px}
-.bodyIn{background-color:#F78978; padding-bottom: 80px;	margin: 0; font-family: 'Roboto', sans-serif;}
+.bodyIn{background-color:#F78978; padding-bottom: 80px;	margin: 0; font-family: 'Roboto', sans-serif; color: white;}
 .headerIn{background-color:#D8280D;}
 .charities{color: white;}
 .references{color: white;}
@@ -806,6 +806,7 @@ font-family: 'Roboto', sans-serif;
 
 
 	
+
 
 
 

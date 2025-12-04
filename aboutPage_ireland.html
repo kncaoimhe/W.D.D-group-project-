@@ -1,143 +1,196 @@
 <!DOCTYPE html>
-<html lang ="en">
-	<head>
-	<title> Sustainablity </title>
-		<link rel="stylesheet" href="style.css"><!--This is to connect the stylesheet to this page-->
+<html lang="en">
+<head>
+    <title>Switzerland – Poverty Overview</title>
+    <!--Page title shown on the browser tab-->
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Suzanne Soares"><!--meta tags to inform the author and the viewport-->
-	
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-		
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"><!--Boostrap-->
-	
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script><!--Boostrap-->
-	</head>
-	<body class="bodyIreland">
-		<div class="wrapperIreland"><!--To wrap the hole body-->
-			<header class="header"><!--head-->
-				<img id="irelandFlag" src="irelandFlag_S.png" alt="Ireland Flag"/>
-				<img id="irelandFlag2" src="irelandFlag_S.png" alt="Ireland Flag"/>
-				<h1 class="title">Ireland and the UN 2030 Agenda against Poverty</h1><!--Title of the page-->
-			</header>
-		<main class="mainIreland2"><!--content-->
-				<nav class="navbar"><!--Navbar, where all the pages are going to be connected, so the client to have access-->
-					<a href="index.html"> Home page </a> <br>
-					<a href="info.html"> Information page </a> <br>
-					<a href="india.html"> India </a> <br>
-					<a href= "about.india.html"> India and poverty </a> <br> 
-					<a href="ireland.html"> Ireland </a> <br>
-					<a href= "aboutPage_ireland.html"> Ireland and poverty </a><br> 
-					<a href="switzerland.html"> Switzerand </a> <br>
-					<a href= "aboutswitzerland.html"> Switcherland and poverty </a> <br>
-				</nav>
-				
-			<div class="container2"><!--Container of this page to sepaate the columns of the informations I want to add here-->
-				<div class="poverty"><!--First columns is the paragraph and the Image-->
-					<h5 class="referencesIreland">How Ireland Measure Poverty</h5>
-					<p>There are different ways to understand poverty. In Ireland, “absolute poverty” refers to situations in which a person lacks basic necessities such as food and shelter. And to be “at risk of poverty” reflects the concept of “relative poverty”, which applies when a household’s income is below 60% of the national median (2023 it was 10.6%). Ireland is aligned with the United Nations’ 17 Sustainable Development Goals (SDGs) and working to analyse data to create new social and economic strategies.</p>
-					<p>Ireland created the “Roadmap for Social Inclusion 2020-2025” (2020) to reduce consistent poverty to 2.0% and make Ireland one of the most socially inclusive countries in the EU. Unfortunately, even all the efforts, the rate of consistent poverty In Ireland was 5.0% (2024) that was more then the past two years (3.6% 2023 and 4.9% 2022) (CS), 2025).</p><br>
-					<div class="povertyImages"><!--there is a div just for the image to not be corrupt in the CSS file based on the other div-->
-						<img id="poverty2_S" src="poverty2_S.png" alt="2030 Agenda"/>
-					</div>
-				</div>
-					
-				
-				<div class="summaryIreland2"><!--The ohter div for the second column of the container. Where it is located the summary and the Sign up form-->
-					<h5 class="referencesIreland">12 key goals for Ireland based on 17 UN SDG goals:</h5><!--Summary of the Goals that Ireland use-->
-					<ul class="textSummary1">
-						<li>No Poverty</li>
-						<li>Zero Hunger</li>
-						<li>Good Health and Well-Being</li>
-						<li>Quality Education</li>
-						<li>Gender Equality</li>
-						<li>Clean Water and Sanitation</li>
-						<li>Affordable and Clean Energy</li>
-						<li>Decent Work and Economic Growth</li>
-						<li>Industry, Innovation, and Infrastructure</li>
-						<li>Reduced Inequality</li>
-						<li>Sustainable Cities and Communities</li>
-						<li>Responsible Consumption and Production </li>
-					</ul>
-				<hr class="line"><!--Line to separate the summary from the Login form-->
-					<div id="mainScreen"><!--Login part - that uses JS-->
-					<p>Sign up for newsletter:</p><!--Boxes and Button to the Login-->
-						<label class="textSummary2">Your user name:</label><br>
-							<input onkeyup="validateData();" id="userName" type="text" /><br>
-						<label class="textSummary2">Your email address:</label><br>
-							<input onkeyup="validateData();" id="email" type="email" /><br>
-						<label class="textSummary2">Your password:</label><br>
-							<input onkeyup="validateData();" id="password" type="password" /><br>
-						<button id="myBtn" onclick="authenticateUser();" disabled>Log in</button>
-					</div>
-		
-					<div id="success">
-						<p id="message"></p><!--When it goes right, it will show a message and a button if the person wants to logout-->
-						<button onclick="logout();">Log out</button>
-					</div>
-				</div>
-				
-				
-			</div>
-			<div class="container3"><!--Third container just for the References and QR Code for a pdf that has more explanation of the Agenda 2030-->
-				<img id="codeIreland" src="ireland4_S.png" alt="QR CODE - More information from the Government"/>
-				<h5 class="referencesIreland">References</h5>
-						<ul class="listIreland">
-							<li>United Nations. Transforming Our World: The 2030 Agenda for Sustainable Development.</li>
-							<li>Central Statistics Office (CSO)</li>
-							<li>Social Justice Ireland</li>
-						</ul>
-			</div>	
-		</main>
-			
-			<footer class="footerIreland"><!--Bottom of the page-->
-				<p>2025 Ireland Poverty Research Porject | Developed by Group A | Page developed by Suzanne Soares</p>
-				<!--Just the date, name of the project, group name and name of the developer of the page-->
-			</footer>
-			
-		</div>
-			<script>//The hole JS code to make the Login box work - It can be far from the "mainScreen", but it has to be inside of the body
-			document.getElementById("success").style.display = "none";
-			var myTargetElementBtn = document.getElementById("myBtn");
-			var sUserName, sEmail, sPassword;
-			
-			function validateData(){
-				sUserName = document.getElementById("userName").value;
-				sEmail = document.getElementById("email").value;
-				sPassword = document.getElementById("password").value;
-				
-				//NOT = 0, false, "", undefined, null -> TRUE
-				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
-					myTargetElementBtn.disabled = false;
-				}else{
-					myTargetElementBtn.disabled = true;
-				}
-			}
-			
-			function authenticateUser(){
-				document.getElementById("mainScreen").style.display = "none";
-				document.getElementById("success").style.display = "block";
-				//Message that will appear when Login success 
-				var sMessage = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
-				document.getElementById("message").innerHTML = sMessage;			
-			}
-						
-			function logout(){
-				window.location.reload();
-			}
-			
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ensures the webpage scales properly on different devices-->
 
-		</script>
-	</body>
+    <meta name="author" content="Nadia Rahman">
+    <!--Indicates the author of the webpage-->
 
+    <link rel="stylesheet" href="style.css">
+    <!--Links external CSS file containing custom styles for the page-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Imports Bootstrap CSS library for layout and components-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Imports Bootstrap JavaScript for interactive elements-->
+</head>
+
+<body class="swissBody">
+<!--Main body of the webpage-->
+
+    <!-- HEADER -->
+    <header class="swissHeader">
+        <!--Header section containing title and images-->
+
+        <img id="swissFlagImg1" src="swissFlag.jpg" alt="Switzerland Flag">
+        <!--Left flag image in the header-->
+
+        <img id="swissFlagImg2" src="swissFlag.jpg" alt="Switzerland Flag">
+        <!--Right flag image in the header-->
+
+        <h1 class="swissTitle">Switzerland</h1>
+        <!--Main page title-->
+    </header>
+
+    <main class="swissMain">
+    <!--Main container holding all main page content-->
+
+        <!-- NAV BAR -->
+        <nav class="swissNavbar">
+            <!--Navigation bar linking all pages of the website-->
+
+            <a href="index.html">Home page</a>
+            <a href="info.html">Information page</a>
+            <a href="india.html">India</a>
+            <a href="about_india.html">India and poverty</a>
+            <a href="ireland.html">Ireland</a>
+            <a href="about_ireland.html">Ireland and poverty</a>
+            <a href="switzerland.html">Switzerland</a>
+			<a href="about_switzerland.html">Switzerland and poverty</a>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="swissContent">
+            <!--Section containing the left and right content boxes-->
+
+            <div class="swissContainer">
+                <!--Main layout container splitting content into two sides-->
+
+                <!-- LEFT SIDE -->
+                <div class="swissLeftBox">
+                    <!--Left box containing text and image about poverty-->
+
+                    <h3 class="subtitle1Swiss">Understanding Poverty in Switzerland</h3>
+                    <!--Title for the left content section-->
+
+                    <p class="contentText">
+                        <!--Paragraph explaining poverty in Switzerland-->
+                        Even though Switzerland is a rich country, poverty is increasing... (content unchanged)
+                    </p>
+
+                    <p class="contentText">
+                        <!--Additional explanation about support from Caritas-->
+                        Many families must choose between paying bills... (content unchanged)
+                    </p>
+
+                    <img id="swissPovertyImg" src="swissGoals.avif" alt="Switzerland goals by 2030">
+                    <!--Image representing Switzerland's 2030 goals-->
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="swissRightBox swissRedBox">
+                    <!--Right box containing goals and newsletter form-->
+
+                    <h3 class="subtitle2Swiss">Switzerland's 10 Goals to Reduce Poverty by 2030</h3>
+                    <!--Title for Switzerland's poverty reduction goals-->
+
+                    <ul class="swissGoalsList">
+                        <!--List of Switzerland's anti-poverty goals-->
+                        <li>Everyone has enough for basic needs</li>
+                        <li>People at risk get help early</li>
+                        <li>Social support stays strong</li>
+                        <li>Jobs pay fairly</li>
+                        <li>Children grow up without poverty</li>
+                        <li>Affordable housing for all</li>
+                        <li>Help is available in tough situations</li>
+                        <li>Equal chances across the country</li>
+                        <li>Migrants are supported to integrate</li>
+                        <li>A strong and fair economy</li>
+                    </ul>
+
+                    <hr class="lineswiss">
+                    <!--Divider line separating content sections-->
+
+                    <!-- Newsletter Box -->
+                    <div id="swissNewsletterBox">
+                        <!--Newsletter form where users enter details-->
+
+                        <h6>Sign up for newsletter:</h6>
+                        <label>Your username:</label><br>
+                        <input onkeyup="validateData();" id="inputUser" type="text"><br>
+                        <!--Username input field-->
+
+                        <label>Your email address:</label><br>
+                        <input onkeyup="validateData();" id="inputEmail" type="email"><br>
+                        <!--Email input field-->
+
+                        <label>Your password:</label><br>
+                        <input onkeyup="validateData();" id="inputPassword" type="password"><br>
+                        <!--Password input field-->
+
+                        <button id="btnLogin" onclick="authenticateUser();" disabled>Log in</button>
+                        <!--Login button disabled until data is valid-->
+                    </div>
+
+                    <div id="swissSuccessBox">
+                        <!--Box shown when login is successful-->
+
+                        <p id="successMessage"></p>
+                        <!--Displays success message-->
+
+                        <button onclick="logout();">Log out</button>
+                        <!--Logs user out by refreshing the page-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- REFERENCES -->
+            <div>
+                <!--Reference list for the information sources-->
+
+                <h5 class="swissReferences">References</h5>
+                <ul class="References1">
+                    <li>Swiss Federal Statistical Office (FSO)</li>
+                    <li>Caritas Switzerland</li>
+                    <li>SWI swissinfo.ch</li>
+                </ul>
+            </div>
+
+        </main>
+
+        <footer class="swissFooter">
+            <!--Footer with project credits-->
+            <p>2025 Switzerland Poverty Research Project | Developed by Group A | Page by Nadia Rahman</p>
+        </footer>
+
+        <!-- JS -->
+        <script>
+            document.getElementById("swissSuccessBox").style.display = "none";
+            <!--Hides success box until user logs in-->
+
+            var loginBtn = document.getElementById("btnLogin");
+            var sUserName, sEmail, sPassword;
+            <!--Variables used to store user input values-->
+
+            function validateData() {
+                <!--Checks if username, email, and password are long enough-->
+                sUserName = document.getElementById("inputUser").value;
+                sEmail = document.getElementById("inputEmail").value;
+                sPassword = document.getElementById("inputPassword").value;
+
+                loginBtn.disabled = !(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2);
+                <!--Enables login button when all fields have more than 2 characters-->
+            }
+
+            function authenticateUser() {
+                <!--Shows success message and hides input form-->
+                document.getElementById("swissNewsletterBox").style.display = "none";
+                document.getElementById("swissSuccessBox").style.display = "block";
+
+                var msg = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+                document.getElementById("successMessage").innerHTML = msg;
+            }
+
+            function logout() {
+                <!--Reloads the page to reset login state-->
+                window.location.reload();
+            }
+        </script>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-

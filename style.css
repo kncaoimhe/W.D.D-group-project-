@@ -781,8 +781,10 @@ font-family: 'Roboto', sans-serif;
 
 /* References */
 .swissReferences {
-    width: 110%;
-    margin-top: 0px;
+    font-size: 22px;
+    font-weight: bold;
+	width: 110%;
+    margin-top: 20px;
 	background-color: #F2452B;
 	color: white;
 }
@@ -799,6 +801,7 @@ font-family: 'Roboto', sans-serif;
 
 
 	
+
 
 
 

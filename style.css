@@ -72,6 +72,7 @@ p{
 	padding-bottom: 80px;
 	margin: 0;/*No margin on the page*/
 	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 
 .headerIreland{
@@ -233,7 +234,7 @@ p{
 	color: white;
 }
 .listIreland{/*Changing the color of the text inside of the list - that it is inside of the summary*/
-	color: black;
+	color: white;
 }
 
 .textSummary1{
@@ -872,5 +873,6 @@ p{
     text-align: center;
     margin-top: 20px;
 }
+
 
 

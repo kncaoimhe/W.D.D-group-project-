@@ -57,7 +57,7 @@ p{
 .charities{color: black;}
 .references{color: black;}
 .pov{color: black;}
-.summaryIn{background-color: #D8280D; padding: 20px; float: right; width: 300px; height: 550px; }
+.summaryIn{background-color: #D8280D; padding: 20px; float: right; width: 300px; height: 550px; color: white;}
 #img3 {width:115px; float:left;}
 #img31{float:right; width:115px;}
 .footerIn{clear: both; left: 0;	width: 100%; text-align: center; padding: 15px 0; background-color: #F2452B;}
@@ -806,6 +806,7 @@ font-family: 'Roboto', sans-serif;
 
 
 	
+
 
 
 

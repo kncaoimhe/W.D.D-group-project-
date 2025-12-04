@@ -3,8 +3,10 @@
     
 	<head>
 	    <title>Sustainability - Poverty - India</title>
+		<!--Page title shown on the browser tab-->
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<!--Link to Bootstrap-->
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 		<!--Link to Bootstrap-->
@@ -20,13 +22,20 @@
 		
 	</head>
 	<body class="bodyIndia">
+	<!--Main body of the webpage-->
 		<header class="headerIndia">
+		<!--Header section containing title and images-->
 			<img id="indianFlag2" src="indian flag.png" alt="Indian Flag Right">
+			<!--Right flag image in the header-->
 			<img id="indianFlag1" src="indian flag.png" alt="Indian Flag Left">
+			<!--Left flag image in the header-->
 			<h1 class="title">India</h1>
+			<!--Main page title-->
 		</header>
 		<main class="main">
+		<!--Main container holding all main page content-->
 			<nav class="navbar">
+			<!--Main container holding all main page content-->
         		<a href="index.html">Home page</a>
 				<a href="info.html">Information page</a>
 				<a href="india.html">India</a>
@@ -41,6 +50,7 @@
 			<div class="container2India">
 				<div class="povertyIndia">
 					<h3 class="textIndia">Overview of poverty in India</h3>
+					<!--Overview of India text-->
 					<div class="state-chart-container">
 					<img id="india-state-chart" src="india-state-chart.jpg" alt="Indian state chart">
 					<ul class="IndiatextSummary1">
@@ -54,8 +64,9 @@
 		            </ul>
 					</div>
 					
-						<h3 class="textIndia">Causes of poverty</h3>
-						<div class="bar-chart-container">
+					<h3 class="textIndia">Causes of poverty</h3>
+					<!--Causes of poverty in India text-->
+					<div class="bar-chart-container">
 					<ul class="IndiatextSummary2">
 					<li> Limited access to education</li>
 					<li> Unemployment and underemployment</li>
@@ -69,6 +80,7 @@
 					</div>
 					
 						<h3 class="textIndia">Government initatives</h3>
+						<!--Government initatives in India text-->
 						<div class="index-score-container">
 						<img id="india-index-score" src="india-index-score.png" alt="Indian index score">
 					<ul class="IndiatextSummary3">
@@ -78,6 +90,7 @@
 				    </div>
 				</div>
 				<div class="summaryIndia">
+				<!--Summary text-->
 				<p class="p1">Summary:</p>
 				<ul>
 					<li> Poverty Reduction: India lifted 171 million people out of extreme poverty over the past decade.</li>
@@ -88,7 +101,9 @@
 					<li> Government Initiatives: Programs like MGNREGA, PMAY, Ayushman Bharat, and PMJDY target employment, housing, health, and financial inclusion.</li>
 				</ul>
 				<hr class="lineIndia">
+				 <!--Dividing line separating the summary and newsletter sign up-->
 				<div id="mainScreen">
+				<!--Newsletter sign up-->
 					<h5 class="textSummary1">Sign up for newsletter:</h5>
 					<label class="textSummary2">Your user name:</label><br>
 					<input onkeyup="validateData();" id="userName" type="text" /><br>
@@ -108,6 +123,7 @@
 				
 			<div class="container3India">
 				<h5 class="referencesIndia">References:</h5>
+				<!--India references' text-->
 		<ul class="listIndia">
 		<li><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099722104222534584"></a> World Bank. India Poverty and Equity Brief : October 2025 (English). Poverty and Equity Brief Washington, D.C. : World Bank Group.</li>
 		<li><a href="https://www.newindianexpress.com/web-only/2025/May/27/the-number-of-poor-are-falling-in-india-is-it-time-to-shift-the-poverty-line-now"></a> The number of poor are falling in India; is it time to shift the poverty line now?</li>
@@ -119,10 +135,12 @@
 		</ul>
 			</div>
 			<footer class="footerIndia">
+			<!--Footer with project credits-->
 				<p>India Poverty Research Project 2025 | Developed by Group A | Page developed by Fiona Vincent</p>
 			</footer>
 		</main>
 		<script>
+		<!--Javascript-->
 			document.getElementById("success").style.display = "none";
 			var myTargetElementBtn = document.getElementById("myBtn");
 			var sUserName, sEmail, sPassword;

@@ -1,569 +1,5 @@
-*General style*/
-
-.body{
-	background-color:#F78978;
-	font-family: 'Roboto', sans-serif;
-}
-
-.header{
-	background-color:#D8280D;
-}
-h1{
-	text-align: center;
-	color: white;	
-}
-h3{
-	 
-	background-color: #F2452B; 
-	color: white;
-}
-h4{
-	background-color: #F2452B; 
-	color: white;
-}
-h5{
-	color: white;
-}
-p{
-	
-}
-
-
-.navbar a{
-	color: #D8280D;
-    text-decoration: underline;
-    margin: 0 10px;
-}
-.navbar{
-	background-color: white;
-    text-align: center;      
-    padding: 8px 0;
-}
-.main{
-	
-}
-.goal {
-	float: right;
-}
-.footer{
-	color: white;
-}
-
-/*Seperate part for Index and Info page - Caoimhe*/
-#img1{width: 230px; float: left; padding-right: 20px;}
-#img2 {float: right; width: 240px}
-.bodyIn{background-color:#F78978; padding-bottom: 80px;	margin: 0; font-family: 'Roboto', sans-serif; color: white;}
-.headerIn{background-color:#D8280D;}
-.charities{color: white;}
-.references{color: white;}
-.pov{color: white;}
-.summaryIn{background-color: #D8280D; padding: 20px; float: right; width: 300px; height: 550px; color: white;}
-#img3 {width:115px; float:left;}
-#img31{float:right; width:115px;}
-.footerIn{clear: both; left: 0;	width: 100%; text-align: center; padding: 15px 0; background-color: #F2452B;}
-.js{float:right;}
-
-
-
-/*Seperate part for Ireland page - Suzanne*/
-/*First Page*/
-.bodyIreland{
-	background-color:#F78978;/*Changing the background color*/
-	padding-bottom: 80px;
-	margin: 0;/*No margin on the page*/
-	font-family: 'Roboto', sans-serif;
-}
-
-.headerIreland{
-	background-color:#D8280D;/*Background color for the Title*/
-}
-.title{/*Design of the title: color and text align to the center*/
-	color: white;
-	text-align: center;
-}
-#irelandFlag{/*Ireland flag at the top of the page*/
-	float: left; 
-	width: 95px;
-}
-#irelandFlag2{
-	float: right;
-	width: 95px;
-}
-.subTitle{/*Design of the subTitle*/
-	text-align: center;
-	color: white;
-}
-.mainIreland1 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 300px;  /* 2 columns and Summary */
-  gap: 30px;
-  
-  /* Had to do this because of Bootstrap - it was blocking my summary to be moved to the right */
-  width: 100%;
-  max-width: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-
-
-.sec20{/*Customising the div, which is one of the columns with the text and images*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: justify;
-	padding: 20px;
-}
-.subTitle20, .subTitle21{
-	color: white;/*Changing the text color*/
-}
-#ireland20thCenture{/*Customising the image, making smaller, with padding, be at the center of the column*/
-	float: none;
-	display: block;
-	width: 65%;
-	padding-bottom: 15px;
-	padding-top: 17px;
-}
-
-.sec21{/*Customising the div, which is one of the columns with the text and images*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: justify;
-	padding: 20px;
-	gap: 20px;
-}
-.sec21 .subSec21{/*Making the image and text inside of the div be side by side*/
-	display: flex;
-	gap: 20px;
-	align-items: flex-start;
-}
-
-
-#ireland21stCenture{/*Customising the image*/
-	float: none;
-	display: block;
-	width: 150px;
-}
-#ireland21stCenture2{/*Customising the image*/
-	float: none;
-	display: block;
-	width: 80%;
-	padding-bottom: 15px;
-}
-
-.summaryIreland1{/*Other div, which is the block with the summary*/
-	padding: 20px;
-	background-color: #D8280D;
-	color: white;
-}
-
-.footerIreland{/*Customising the bottom of the page, which there is the name of the author and name of the project*/
-	clear: both;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	padding: 15px 0;
-	background-color: #F2452B;
-}
-
-
-/*Second page*/
-.container2{/*Customising the container to the div inside of it be separated in 2 columns and with horizontal gaps*/
-	display: grid;
-	grid-template-columns: 1fr 300px;
-	gap: 20px;
-	max-width: 100%;
-}
-.poverty{/*Div of the text and image*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: justify;
-	padding: 20px;
-}
-
-.povertyImages{/*Block that has just the image, which is located inside of the Poverty div*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: justify;
-	padding: 20px;
-	gap: 20px;
-}
-/*Making the image responsive*/
-#poverty2_S{/*Government image - Customising the image for the size, float and other things work*/
-	float: none;
-	display: block;
-	width: 100%;
-	max-width: 700px;
-	height: auto;
-}
-
-.summaryIreland2{/*Other div, which is the block with the summary*/
-	float: right;
-	padding: 20px;
-	color: white;
-	background-color: #D8280D;
-}
-
-.line{/*Line that separate the summary from the Login block*/
-	border: none;
-	height: 2px;
-	background-color: white;
-	margin: 15px 0;
-}
-
-#codeIreland{/*QR Code for another pdf*/
-	float: left;
-	width: 150px;
-	padding: 10 px;
-	padding-right: 20px;
-	
-}
-
-.summaryIreland p{/*Changing the color and making the text be bold*/
-	color: white;
-	font-weight: bold;
-}
-.referencesIreland{/*Changing the backgroung and color*/
-	background-color: #F2452B;
-	color: white;
-}
-.listIreland{/*Changing the color of the text inside of the list - that it is inside of the summary*/
-	color: black;
-}
-
-.textSummary1{
-	color: white;
-}
-.textSummary2{
-	color: white;
-	
-}
-
-/*Changing format*/
-/*For tablets*/
-@media (max-width: 992px) {
-  /*Header: title under the flag and in the center*/
-.headerIreland {
-    flex-direction: column;
-    text-align: center;
-}
-
-.title {
-    margin: 0;
-}
-
-/*Page 1: all columns turning in just 1*/
-.mainIreland1 .container {/*Did the same here to cancel Bootstrap and make the summary work*/
-    grid-template-columns: 1fr;
-    width: 100%;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.sec21 .subSec21 {
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-}
-
-/*Page 2: grid turning in just one column*/
-.container2 {
-    grid-template-columns: 1fr;
-}
-
-/*Letting the red box be under the hole text - so, Login and Summary will be at the end of the page*/
-.summaryIreland {
-    order: 2;
- }
-
-.poverty {
-    order: 1;
-}
-}
-
-/*For cell phone*/
-@media (max-width: 600px) {
-/*Navbar: links in block and in the middle of the page*/
-.navbar {
-    text-align: center;
-}
-
-.navbar a {
-    display: block;
-    padding: 6px 0;
-}
-
-#irelandFlag {
-    width: 60px;
-}
-.container3 {
-	flex-direction: column;
-}
-
-#codeIreland {
-    margin-right: 0;
-}
-}
-	
-	
-/*India & About India page - Fiona*/
-
-.bodyIndia { /* Title color */
-  background-color: #F78978;
-  margin:0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.headerIndia { /* Include color for the link to different pages */
-  background-color: #D8280D;
-}
-	
-.container1India {
-  display: flex;
-  flex-direction: column;
-}
-
-.povertyIndia { /* Poverty text */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
-  padding: 20px;
-}
-
-.textIndia { /* Subtitle text */
-  background-color: #F2452B;
-  width: 105%; 
-  text-align: center;
-  color: white;
-  margin-top:-20px;
-}
-
-.IndiatextSummary1,
-.IndiatextSummary2,
-.IndiatextSummary3 {
-  color: white;
-}
-
-.IndiatextSummary1{
-  overflow: visible;
-  color: white;
-  margin: 0;
-  padding-left: 0;
-  flex: 1;
-}
-
-.IndiatextSummary2{ 
-  overflow: visible;
-  color: white;
-  margin: 0;
-  padding-right: 0;
-  flex: 1;
- }
- 
-.IndiatextSummary3{  
-  overflow: visible;
-  color: white;
-  margin: 0;
-  padding-left: 0;
-  flex: 1;
-}
-
-.IndiatextSummary4{ /* Text */
-  color: white;
-}
-
-.summaryIndia { /* Summary box */
-  background-color: #D8280D;
-  width:100%;
-  color: white;
-  padding: 20px;
-  margin: 0 auto;
-  height: 100%;
-}
-
-.p1{ /* Summary title */
-  color: white;
-  font-weight: bold;
-  margin-top:0px;
-}
-
-.container2India { /* Summary box & poverty text */
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  max-width: 100%;
-}
-
-.lineIndia {
-  border: none;
-  height: 2px;
-  background-color: white;
-  margin: 15px 0;
-}
-
-.container3India { /* References box */
-  display: flex;
-  flex-direction: column;
-  clear: both;
-}
-
-.referencesIndia { /* References */
-  grid-column: span 2;
-  background-color: #F2452B;
-  color: white;
-}
-
-.footerIndia { /* Footer box at bottom of page */
-  grid-column: span 2;
-  background-color: #F2452B;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 10px;
-}
-
-.listIndia { /* Reference list */
-  color: white;
-}
-
-/* Images */
-#indianFlag1 {
-  float: right;
-  width: 72px;
-}
-
- #indianFlag2 {
-  float: left;
-  width: 72px; 
-}
-
-#taj-mahal {
- width: 350px;
- align-self: flex-start;
- margin-top: -2px;
- margin-right: 15px;
- margin-left:-15px;
- display: block;
-
-}
-
-#sustainable-development {
- width: 350px;
- align-self: flex-end;
- margin-top: -90px;
- margin-right: auto;
- display: block;
-}
-
-#SDGs {
- width: 450px;
- align-self: flex-start;
- margin-top: 90px;
- margin-bottom: -30px;
- margin-right: auto;
- display: block;
-}
-
-#india-state-chart {
- width: 270px;
- align-self: flex-start;
- margin-top: 5px;
- margin-right: 15px;
- margin-left:-10px;
- display: block;
- 
-}
-
-#india-bar-chart {
- width: 470px;
- align-self: flex-start;
- margin-right:-10px;
- margin-left:15px;
- display: block;
- gap:10px;
-}
-
-#india-index-score {
- width: 470px;
- align-self: flex-start;
- margin-top: 10px;
- margin-right: 10px;
- margin-left:-10px;
- display: block;
-}
-
-.taj-mahal-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  width: 100%;
-}
-
-.sustainable-development-container{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-  width: 100%;
-  margin-bottom:30px;
-  margin-top: 5px;
-}
-
-.SDGs-container{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  width: 100%;
-  margin-bottom:20px;
-}
-
-.state-chart-container{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  width: 100%;	
-  margin-bottom:30px;
-}
-
-.bar-chart-container{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  width: 100%;
-  margin-bottom:30px;
-}
-
-.index-score-container{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  width: 100%;
-}
-
-/*Seperate part for Switzerland page - Nadia*/
-/*First Page*/
-/* Page background */
-.swissBody {
-    background-color: #F78978;
-    margin: 0;
-    padding-bottom: 50px;
-    color: white;
-}
-
 /* Header */
+/*Styles the top banner containing the flags and title*/
 .swissHeader {
     background-color: #D8280D;
     padding: 20px;
@@ -571,16 +7,22 @@ p{
     position: relative;
 }
 
-#swissFlagImg1 {
+/* Flag images */
+/*Positions the two Switzerland flags on opposite sides*/
+#swissFlagImg1, #swissFlagImg2 {
     width: 120px;
+}
+
+#swissFlagImg1 {
     float: left;
 }
 
 #swissFlagImg2 {
-    width: 120px;
     float: right;
 }
 
+/* Title */
+/*Main heading displayed in the header*/
 .swissTitle {
     color: white;
     font-size: 38px;
@@ -589,6 +31,7 @@ p{
 }
 
 /* Navbar */
+/*Styles the navigation menu and links between pages*/
 .swissNavbar {
     background-color: white;
     padding: 10px;
@@ -606,44 +49,53 @@ p{
 }
 
 /* Layout container */
+/*Controls the spacing and positioning of left and right sections*/
 .swissContainer {
     display: flex;
+    gap: 130px;
     max-width: 100%;
-    padding: 0px;
 }
 
 /* Left column */
+/*Main content area shown on the left side*/
 .swissLeftBox {
     width: 70%;
     color: white;
 }
 
-/* Red summary box on right */
+/* Right summary box */
+/*Red box containing the summary and newsletter form*/
 .swissSummaryBox {
-    width: 30%;
+    width: 22%;
     background-color: #D8280D;
     padding: 20px;
     color: white;
 }
 
+/* Summary subtitle */
+/*Top label for the summary section*/
 .subtitle1Swiss {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
 
-/* Section title centered */
+/* Section titles */
+/*Headings for each poverty section*/
 .sectionTitleSwiss {
-     font-size: 22px;
+    font-size: 22px;
     font-weight: bold;
-	width: 110%;
     margin-top: 20px;
-	text-align: center;
-	background-color: #F2452B;
-	color: white;
+    text-align: center;
+    background-color: #F2452B;
+    color: white;
+    width: 130%;
 }
 
-/* Content row: image and text */
+/* Content layout */
+/*Aligns images and text side-by-side*/
 .contentRow {
     display: flex;
     align-items: flex-start;
@@ -652,115 +104,61 @@ p{
     flex-wrap: wrap;
 }
 
-.reverseRow {
-    flex-direction: row-reverse; 
+/* Horizontal line */
+/*Divider used inside the summary box*/
+.lineswiss{
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 15px 0;
 }
 
-.contentImg {
-    max-width: 45%;
+/* Images */
+/*Controls the size and responsiveness of images*/
+.contentImg, .contentImg1 {
+    max-width: 40%;
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    margin-left: 7px;
 }
 
-.contentText {
+/* Text blocks */
+/*Paragraph formatting for poverty descriptions*/
+.contentText1, .contentText2, .contentText3 {
     max-width: 50%;
     font-size: 16px;
     line-height: 1.6;
+    text-align: justify;
+    margin-left: 20px;
 }
 
 /* References */
+/*Styles the references heading*/
 .referencesTitleSwiss {
     font-size: 22px;
     font-weight: bold;
-	width: 110%;
     margin-top: 20px;
-	background-color: #F2452B;
-	color: white;
+    background-color: #F2452B;
+    color: white;
+    text-align: center;
+    width: 130%;
 }
 
 .referenceListSwiss {
     margin-left: 15px;
 }
 
-/* Footer */
-.swissFooter {
-    background-color: #F2452B;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 /* Summary list */
+/*Formatting for bullet points in the summary*/
 .swissSummaryList {
     list-style-position: inside;
     padding-left: 10px;
 }
 
-
-/*second page*/
-/* Layout container */
-/* Layout */
-.swissContainer {
-    display: flex;
-    gap: 20px;
-    max-width: 100%;
-}
-
-/* Left side */
-.swissLeftBox {
-    width: 70%;
-    text-align: left;
-}
-
-/* Right side */
-.swissRightBox {
-    width: 30%;
-}
-
-/* Red box */
-.swissRedBox {
-    padding: 20px;
-    background-color: #D8280D;
-    color: white;
-}
-
-/* Subtitles */
-.subtitle1Swiss {
-    font-size: 22px;
-    font-weight: bold;
-	width: 110%;
-    margin-top: 20px;
-	text-align: center;
-	background-color: #F2452B;
-	color: white;
-}
-
-.subtitle2Swiss {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 20px;
-	text-align: center;
-}
-
-/* Poverty image */
-#swissPovertyImg {
-    width: 800px;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Goals list */
-.swissGoalsList {
-    list-style-position: inside;
-    padding-left: 10px;
-}
-
 /* Newsletter box */
+/*Styles the form used for user login*/
 #swissNewsletterBox {
-    background-color: white;
-    color: black;
+    color: white;
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
@@ -773,8 +171,9 @@ p{
     border: 1px solid #ccc;
 }
 
+/* Login button */
+/*Button styling inside the newsletter box*/
 #btnLogin {
-    background-color: #D8280D;
     color: white;
     padding: 8px 12px;
     border: none;
@@ -783,21 +182,13 @@ p{
 }
 
 /* Success message box */
+/*Displayed after login is successful*/
 #swissSuccessBox {
     margin-top: 15px;
 }
 
-/* References */
-.swissReferences {
-    font-size: 22px;
-    font-weight: bold;
-	width: 110%;
-    margin-top: 20px;
-	background-color: #F2452B;
-	color: white;
-}
-
 /* Footer */
+/*Bottom area with credits*/
 .swissFooter {
     background-color: #F2452B;
     color: white;
@@ -805,43 +196,3 @@ p{
     text-align: center;
     margin-top: 20px;
 }
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

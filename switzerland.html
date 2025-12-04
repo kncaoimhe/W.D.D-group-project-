@@ -3,76 +3,86 @@
 <head>
     <title>Switzerland – Poverty Overview</title>
 
-    <!-- CSS -->
+    <!-- CSS: Links the HTML to the external stylesheet (style.css) -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Page settings -->
+    <!-- Page settings: Makes page responsive and adds author info -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="Nadia Rahman">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-    <!-- Bootstrap -->
+
+    <!-- Bootstrap CDN for layout and styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="swissBody">
 
-    <!-- HEADER -->
+
+    <!-- HEADER SECTION -->
+    <!-- Contains the two flag images and the main title at the top -->
     <header class="swissHeader">
         <img id="swissFlagImg1" src="swissFlag.jpg" alt="Switzerland Flag">
-		<img id="swissFlagImg2" src="swissFlag.jpg" alt="Switzerland Flag">
+        <img id="swissFlagImg2" src="swissFlag.jpg" alt="Switzerland Flag">
         <h1 class="swissTitle">Switzerland</h1>
     </header>
 
     <main class="swissMain">
 
-        <!-- NAVIGATION -->
+
+        <!-- NAVIGATION BAR -->
+        <!-- Links to all other pages in the project -->
         <nav class="swissNavbar">
             <a href="index.html">Home page</a>
             <a href="info.html">Information page</a>
             <a href="india.html">India</a>
-            <a href="about.india.html">India and poverty</a>
+            <a href="about_india.html">India and poverty</a>
             <a href="ireland.html">Ireland</a>
-            <a href="aboutPage_ireland.html">Ireland and poverty</a>
+            <a href="about_ireland.html">Ireland and poverty</a>
             <a href="switzerland.html">Switzerland</a>
-            <a href="aboutswitzerland.html">Switzerland and poverty</a>
+            <a href="about_switzerland.html">Switzerland and poverty</a>
         </nav>
 
         <div class="swissContainer">
 
-            <!-- LEFT COLUMN -->
+
+            <!-- LEFT COLUMN (MAIN CONTENT) -->
+            <!-- Contains all poverty information and images -->
             <div class="swissLeftBox">
 
-                <!-- Section 2018 -->
+                <!-- 2018 Section -->
                 <h3 class="sectionTitleSwiss">Poverty and Financial Struggles in Switzerland, 2018</h3>
                 <div class="contentRow">
-                    <img src="poverty2018Swiss.png" alt="Poverty in Switzerland 2018" class="contentImg leftImg">
-                    <p class="contentText">
-                        In 2018, Switzerland remained one of the richest countries in Europe, but about 7.9% of the population, or roughly 660,000 people, were income poor. This means their earnings were too low to cover basic needs such as food, housing, and daily expenses. Many others who were not officially poor still faced financial difficulties. For example, 1 in 8 people had trouble paying bills, and around 20% could not afford an unexpected cost of CHF 2,500.
-                        Some people with jobs were still poor, showing that having work does not always protect against money problems. Many families could not afford a holiday or lived in homes with issues like noise, dampness, or safety concerns. Although long-term poverty is uncommon in Switzerland, these numbers show that even in a wealthy country, a significant number of people face real financial challenges and stress.
+                    <img src="poverty2018Swiss.png" alt="Poverty in Switzerland 2018" class="contentImg1 leftImg">
+                    <p class="contentText1">
+                        <!-- Paragraph explains poverty numbers and situations in 2018 -->
+                        In 2018, Switzerland was still one of the richest countries in Europe. Even so, about 7.9% of the population (around 660,000 people) were income poor. Their earnings were too low to cover basic needs like food, housing, and daily expenses. Many had to make difficult choices every month because their money was not enough.
+                        Many others were not officially poor but still faced financial pressure. For example, 1 in 8 people struggled to pay their bills, and around 20% could not afford an unexpected cost of CHF 2,500. This shows that a large part of the population lived very close to financial trouble.
+                        Some people with jobs were still poor, which means that having work did not always protect them from money problems. High living costs and low wages made life hard for many workers. Families also often had to give up things like holidays or lived in homes with issues such as noise, dampness, or poor safety.
+                        Even though long-term poverty is uncommon in Switzerland, these numbers show that many people still face real financial challenges. Poverty in a wealthy country may be hidden, but it affects daily life, opportunities, and well-being for many individuals and families.
                     </p>
                 </div>
 
-
-                <!-- Section 2021 -->
+                <!-- 2021 Section -->
                 <h3 class="sectionTitleSwiss">Poverty and Living Standards in Switzerland, 2021</h3>
                 <div class="contentRow">
-                    <p class="contentText">
+                    <p class="contentText2">
+                        <!-- Summary of 2021 poverty rate and social struggles -->
                         In 2021, about 5.2% of people in Switzerland, or 448,000 people, could not afford important goods, services, or social activities because of money problems. Many could not pay for unexpected costs, replace old furniture, or go on a holiday. The poverty rate was 8.7%, which means these people earned less than the basic income needed for living. People most affected were unemployed, low-income workers, single parents, and some foreigners. Even some people with jobs struggled to make ends meet. Despite this, Switzerland still has one of the highest living standards in Europe.
                     </p>
                     <img src="poverty2021Swiss.png" alt="Poverty Rate Switzerland 2021" class="contentImg leftImg">
                 </div>
 
-                <!-- Section 2023 -->
+                <!-- 2023 Section -->
                 <h3 class="sectionTitleSwiss">Income Poverty in Switzerland, 2023</h3>
                 <div class="contentRow">
                     <img src="povertyRate2023Swiss.png" alt="Poverty Rate Switzerland 2023" class="contentImg leftImg">
-                    <p class="contentText">
+                    <p class="contentText3">
+                        <!-- Summary of 2023 income poverty data -->
                         In 2023, based on income from 2022, about 8.1% of the Swiss population lived below the poverty line. People most affected included those living alone, single parents with children, people without further education, and households where no one works. Even some people with jobs earned very little and struggled to cover their basic needs. Many households had difficulty paying bills, buying essential items, or participating in social activities due to money problems. Despite these challenges, Switzerland continues to be one of the richest countries in Europe, with a high overall standard of living, but these numbers show that financial difficulties still affect a significant part of the population.
                     </p>
                 </div>
 
-                <!-- REFERENCES -->
+                <!-- Reference List -->
                 <h5 class="referencesTitleSwiss">References</h5>
                 <ul class="referenceListSwiss">
                     <li>Swiss Federal Statistical Office (FSO)</li>
@@ -81,7 +91,9 @@
                 </ul>
             </div>
 
-            <!-- RIGHT RED SUMMARY BOX -->
+          
+            <!-- RIGHT COLUMN (SUMMARY + NEWSLETTER) -->
+            <!-- Red box summarizing poverty info and newsletter form -->
             <div class="swissRightBox swissSummaryBox">
                 <h3 class="subtitle1Swiss">Summary</h3>
                 <ul class="swissSummaryList">
@@ -92,22 +104,74 @@
                     <li>Single parents, unemployed people, low-income workers, and some foreigners were most affected.</li>
                     <li>Living standards are high overall, but financial stress is common for many.</li>
                 </ul>
+
+                <hr class="lineswiss">
+
+                <!-- Newsletter signup form -->
+                <div id="swissNewsletterBox">
+                    <h6>Sign up for newsletter:</h6>
+                    <label>Your username:</label><br>
+                    <input onkeyup="validateData();" id="inputUser" type="text"><br>
+
+                    <label>Your email address:</label><br>
+                    <input onkeyup="validateData();" id="inputEmail" type="email"><br>
+
+                    <label>Your password:</label><br>
+                    <input onkeyup="validateData();" id="inputPassword" type="password"><br>
+
+                    <button id="btnLogin" onclick="authenticateUser();" disabled>Log in</button>
+                </div>
+
+                <!-- Appears after user logs in -->
+                <div id="swissSuccessBox">
+                    <p id="successMessage"></p>
+                    <button onclick="logout();">Log out</button>
+                </div>
+
             </div>
 
         </div>
 
     </main>
 
-    <!-- FOOTER -->
+  
+    <!-- FOOTER SECTION -->
     <footer class="swissFooter">
         <p>2025 Switzerland Poverty Research Project | Developed by Group A | Page by Nadia Rahman</p>
     </footer>
 
+   
+    <!-- JAVASCRIPT FUNCTIONS -->
+    <!-- Handles login validation, authentication, and logout -->
+    <script>
+        /* Hide success message box at start */
+        document.getElementById("swissSuccessBox").style.display = "none";
+        var loginBtn = document.getElementById("btnLogin");
+        var sUserName, sEmail, sPassword;
+
+        /* Validates user input and enables login button */
+        function validateData() {
+            sUserName = document.getElementById("inputUser").value;
+            sEmail = document.getElementById("inputEmail").value;
+            sPassword = document.getElementById("inputPassword").value;
+
+            loginBtn.disabled = !(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2);
+        }
+
+        /* Shows the success message after clicking login */
+        function authenticateUser() {
+            document.getElementById("swissNewsletterBox").style.display = "none";
+            document.getElementById("swissSuccessBox").style.display = "block";
+
+            var msg = "You are now authenticated " + sUserName + ", your email address is " + sEmail + "!";
+            document.getElementById("successMessage").innerHTML = msg;
+        }
+
+        /* Reloads the page to log out */
+        function logout() {
+            window.location.reload();
+        }
+    </script>
+
 </body>
 </html>
-
-
-
-
-
-

@@ -556,6 +556,7 @@ p{
 /*Seperate part for Switzerland page - Nadia*/
 /*First Page*/
 /* Page background */
+/*Sets the general layout and background for the full page*/
 .swissBody {
     background-color: #F78978;
     margin: 0;
@@ -564,6 +565,7 @@ p{
 }
 
 /* Header */
+/*Styles the top banner containing the flags and title*/
 .swissHeader {
     background-color: #D8280D;
     padding: 20px;
@@ -571,16 +573,20 @@ p{
     position: relative;
 }
 
+/* Flag images */
+/*Positions the two Switzerland flags on opposite sides*/
 #swissFlagImg1 {
-    width: 120px;
     float: left;
+	 width: 120px;
 }
 
 #swissFlagImg2 {
-    width: 120px;
     float: right;
+	width: 120px;
 }
 
+/* Title */
+/*Main heading displayed in the header*/
 .swissTitle {
     color: white;
     font-size: 38px;
@@ -589,6 +595,7 @@ p{
 }
 
 /* Navbar */
+/*Styles the navigation menu and links between pages*/
 .swissNavbar {
     background-color: white;
     padding: 10px;
@@ -606,44 +613,53 @@ p{
 }
 
 /* Layout container */
+/*Controls the spacing and positioning of left and right sections*/
 .swissContainer {
     display: flex;
+    gap: 130px;
     max-width: 100%;
-    padding: 0px;
 }
 
 /* Left column */
+/*Main content area shown on the left side*/
 .swissLeftBox {
     width: 70%;
     color: white;
 }
 
-/* Red summary box on right */
+/* Right summary box */
+/*Red box containing the summary and newsletter form*/
 .swissSummaryBox {
-    width: 30%;
+    width: 22%;
     background-color: #D8280D;
     padding: 20px;
     color: white;
 }
 
+/* Summary subtitle */
+/*Top label for the summary section*/
 .subtitle1Swiss {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
 
-/* Section title centered */
+/* Section titles */
+/*Headings for each poverty section*/
 .sectionTitleSwiss {
-     font-size: 22px;
+    font-size: 22px;
     font-weight: bold;
-	width: 110%;
     margin-top: 20px;
-	text-align: center;
-	background-color: #F2452B;
-	color: white;
+    text-align: center;
+    background-color: #F2452B;
+    color: white;
+    width: 130%;
 }
 
-/* Content row: image and text */
+/* Content layout */
+/*Aligns images and text side-by-side*/
 .contentRow {
     display: flex;
     align-items: flex-start;
@@ -652,38 +668,91 @@ p{
     flex-wrap: wrap;
 }
 
-.reverseRow {
-    flex-direction: row-reverse; 
+/* Horizontal line */
+/*Divider used inside the summary box*/
+.lineswiss{
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 15px 0;
 }
 
-.contentImg {
-    max-width: 45%;
+/* Images */
+/*Controls the size and responsiveness of images*/
+.contentImg, .contentImg1 {
+    max-width: 40%;
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    margin-left: 7px;
 }
 
-.contentText {
+/* Text blocks */
+/*Paragraph formatting for poverty descriptions*/
+.contentText1, .contentText2, .contentText3 {
     max-width: 50%;
     font-size: 16px;
     line-height: 1.6;
+    text-align: justify;
+    margin-left: 20px;
 }
 
 /* References */
+/*Styles the references heading*/
 .referencesTitleSwiss {
     font-size: 22px;
     font-weight: bold;
-	width: 110%;
     margin-top: 20px;
-	background-color: #F2452B;
-	color: white;
+    background-color: #F2452B;
+    color: white;
+    text-align: center;
+    width: 130%;
 }
 
 .referenceListSwiss {
     margin-left: 15px;
 }
 
+/* Summary list */
+/*Formatting for bullet points in the summary*/
+.swissSummaryList {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+/* Newsletter box */
+/*Styles the form used for user login*/
+#swissNewsletterBox {
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#swissNewsletterBox input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Login button */
+/*Button styling inside the newsletter box*/
+#btnLogin {
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Success message box */
+/*Displayed after login is successful*/
+#swissSuccessBox {
+    margin-top: 15px;
+}
+
 /* Footer */
+/*Bottom area with credits*/
 .swissFooter {
     background-color: #F2452B;
     color: white;
@@ -692,75 +761,70 @@ p{
     margin-top: 20px;
 }
 
-/* Summary list */
-.swissSummaryList {
-    list-style-position: inside;
-    padding-left: 10px;
-}
-
-
-/*second page*/
-/* Layout container */
-/* Layout */
-.swissContainer {
-    display: flex;
-    gap: 20px;
-    max-width: 100%;
-}
-
-/* Left side */
-.swissLeftBox {
-    width: 70%;
-    text-align: left;
-}
-
-/* Right side */
+/*Second page*/
+/* Right column */
+/*Smaller info box on the right*/
 .swissRightBox {
-    width: 30%;
+    width: 22%;
 }
 
 /* Red box */
+/*Background styling for the goals and login section*/
 .swissRedBox {
-    padding: 20px;
     background-color: #D8280D;
     color: white;
 }
 
 /* Subtitles */
+/*Section headings formatting*/
 .subtitle1Swiss {
     font-size: 22px;
     font-weight: bold;
-	width: 110%;
+    text-align: center;
+    background-color: #F2452B;
+    color: white;
+    width: 120%;
     margin-top: 20px;
-	text-align: center;
-	background-color: #F2452B;
-	color: white;
+}
+
+.contentText{
+    margin-left: 20px;
+    text-align: justify;
 }
 
 .subtitle2Swiss {
+    padding: 20px;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 20px;
-	text-align: center;
+    text-align: center;
 }
 
 /* Poverty image */
+/*Adjusts size and spacing of the main image*/
 #swissPovertyImg {
     width: 800px;
     display: block;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 /* Goals list */
+/*Formatting for the list of Switzerland's goals*/
 .swissGoalsList {
     list-style-position: inside;
     padding-left: 10px;
 }
 
-/* Newsletter box */
-#swissNewsletterBox {
+.lineswiss{
+    border: none;
+    height: 2px;
     background-color: white;
-    color: black;
+    margin: 15px;
+}
+
+/* Newsletter box */
+/*Styles the newsletter sign‑up form*/
+#swissNewsletterBox {
+    color: white;
     padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
@@ -774,7 +838,6 @@ p{
 }
 
 #btnLogin {
-    background-color: #D8280D;
     color: white;
     padding: 8px 12px;
     border: none;
@@ -783,21 +846,25 @@ p{
 }
 
 /* Success message box */
+/*Shown after user logs in successfully*/
 #swissSuccessBox {
     margin-top: 15px;
 }
 
 /* References */
+/*Styles the references header section*/
 .swissReferences {
     font-size: 22px;
     font-weight: bold;
-	width: 110%;
+    text-align: center;
+    background-color: #F2452B;
+    color: white;
+    width: 100%;
     margin-top: 20px;
-	background-color: #F2452B;
-	color: white;
 }
 
 /* Footer */
+/*Bottom credits area formatting*/
 .swissFooter {
     background-color: #F2452B;
     color: white;
@@ -805,3 +872,5 @@ p{
     text-align: center;
     margin-top: 20px;
 }
+
+

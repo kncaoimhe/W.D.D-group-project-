@@ -327,7 +327,7 @@ p{
   background-color: #D8280D;
 }
 	
-.container1India {
+.container1India {/*Div container*/
   display: flex;
   flex-direction: column;
 }
@@ -350,11 +350,11 @@ p{
 
 .IndiatextSummary1,
 .IndiatextSummary2,
-.IndiatextSummary3 {
+.IndiatextSummary3 { /*Text color*/
   color: white;
 }
 
-.IndiatextSummary1{
+.IndiatextSummary1{ /*Text adjustment*/
   overflow: visible;
   color: white;
   margin: 0;
@@ -362,7 +362,7 @@ p{
   flex: 1;
 }
 
-.IndiatextSummary2{ 
+.IndiatextSummary2{ /*Text adjustment*/
   overflow: visible;
   color: white;
   margin: 0;
@@ -370,7 +370,7 @@ p{
   flex: 1;
  }
  
-.IndiatextSummary3{  
+.IndiatextSummary3{ /*Text adjustment*/
   overflow: visible;
   color: white;
   margin: 0;
@@ -378,7 +378,7 @@ p{
   flex: 1;
 }
 
-.IndiatextSummary4{ /* Text */
+.IndiatextSummary4{ /* Text color*/
   color: white;
 }
 
@@ -403,7 +403,7 @@ p{
   max-width: 100%;
 }
 
-.lineIndia {
+.lineIndia { /*References list*/
   border: none;
   height: 2px;
   background-color: white;
@@ -435,18 +435,17 @@ p{
   color: white;
 }
 
-/* Images */
-#indianFlag1 {
+#indianFlag1 {/* Image */
   float: right;
   width: 72px;
 }
 
- #indianFlag2 {
+ #indianFlag2 {/* Image */
   float: left;
   width: 72px; 
 }
 
-#taj-mahal {
+#taj-mahal {/* Image */
  width: 350px;
  align-self: flex-start;
  margin-top: -2px;
@@ -456,7 +455,7 @@ p{
 
 }
 
-#sustainable-development {
+#sustainable-development {/* Image */
  width: 350px;
  align-self: flex-end;
  margin-top: -90px;
@@ -464,7 +463,7 @@ p{
  display: block;
 }
 
-#SDGs {
+#SDGs {/* Image */
  width: 450px;
  align-self: flex-start;
  margin-top: 90px;
@@ -473,7 +472,7 @@ p{
  display: block;
 }
 
-#india-state-chart {
+#india-state-chart {/* Image */
  width: 270px;
  align-self: flex-start;
  margin-top: 5px;
@@ -483,7 +482,7 @@ p{
  
 }
 
-#india-bar-chart {
+#india-bar-chart {/* Image */
  width: 470px;
  align-self: flex-start;
  margin-right:-10px;
@@ -492,7 +491,7 @@ p{
  gap:10px;
 }
 
-#india-index-score {
+#india-index-score {/* Image */
  width: 470px;
  align-self: flex-start;
  margin-top: 10px;
@@ -501,7 +500,7 @@ p{
  display: block;
 }
 
-.taj-mahal-container {
+.taj-mahal-container {/*Div container*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -509,7 +508,7 @@ p{
   width: 100%;
 }
 
-.sustainable-development-container{
+.sustainable-development-container{/*Div container*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -519,7 +518,7 @@ p{
   margin-top: 5px;
 }
 
-.SDGs-container{
+.SDGs-container{/*Div container*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -528,7 +527,7 @@ p{
   margin-bottom:20px;
 }
 
-.state-chart-container{
+.state-chart-container{/*Div container*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -537,7 +536,7 @@ p{
   margin-bottom:30px;
 }
 
-.bar-chart-container{
+.bar-chart-container{/*Div container*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -546,7 +545,7 @@ p{
   margin-bottom:30px;
 }
 
-.index-score-container{
+.index-score-container{/*Div container*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -873,6 +872,7 @@ p{
     text-align: center;
     margin-top: 20px;
 }
+
 
 
 
